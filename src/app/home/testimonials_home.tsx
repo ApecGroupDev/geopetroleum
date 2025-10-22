@@ -8,12 +8,12 @@ const testimonials = [
   {
     name: "David H.",
     company: "PetroTech Solutions",
-    text: "The APEC Group has been instrumental in keeping our fueling operations compliant and efficient. Their attention to detail and commitment to deadlines are unmatched.",
+    text: "Geo Petroleum has been instrumental in keeping our fueling operations compliant and efficient. Their attention to detail and commitment to deadlines are unmatched.",
   },
   {
     name: "Maria R.",
     company: "EcoFuel Systems",
-    text: "Professional, responsive, and knowledgeable. APEC’s team made our site upgrade seamless from start to finish.",
+    text: "Professional, responsive, and knowledgeable. Geo Petroleum’s team made our site upgrade seamless from start to finish.",
   },
   {
     name: "James P.",
@@ -23,7 +23,7 @@ const testimonials = [
   {
     name: "Sophia L.",
     company: "GreenLine Energy",
-    text: "From construction to environmental compliance, APEC has proven to be a reliable long-term partner. Highly recommended.",
+    text: "From construction to environmental compliance, Geo Petroleum has proven to be a reliable long-term partner. Highly recommended.",
   },
 ];
 
