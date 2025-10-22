@@ -4,6 +4,12 @@ import type { Metadata } from "next";
 import Footer from "@/components/footer";
 import Hero_Home from "./home/hero_home";
 import Intro_Home from "./home/intro_home";
+import ExpertiseSection from "./home/expertise_home";
+import CoreServices from "./home/core_home";
+import IndustriesWeServe from "./home/industries_home";
+import TestimonialsSection from "./home/testimonials_home";
+import CTASection from "@/components/cta";
+import HomeFAQSection from "./home/faq_home";
 
 export const metadata: Metadata = {
   title: "",
@@ -25,6 +31,12 @@ export default function Page() {
         <Header />
         <Hero_Home />
         <Intro_Home />
+        <ExpertiseSection />
+        <CoreServices />
+        <CTASection />
+        <TestimonialsSection />
+        <IndustriesWeServe />
+        <HomeFAQSection />
         <Footer />
       </div>
     </HomePageLayout>
