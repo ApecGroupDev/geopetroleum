@@ -1,26 +1,51 @@
-import Link from 'next/link';
+"use client";
+
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function NotFound() {
   return (
-    <div className='flex flex-col bg-[#e3e3e3] min-h-screen justify-between'>
-      <div className='relative z-20'>
-        <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#e3e3e3]'>
+    <div className="flex flex-col min-h-screen bg-[#e3e3e3] items-center justify-center text-center px-6">
+      {/* Content */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-3xl"
+      >
+        {/* 404 Number */}
+        <h1 className="text-[#1DA978] text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[16rem] font-extrabold leading-none drop-shadow-[0_4px_6px_rgba(0,0,0,0.25)]">
+          404
+        </h1>
 
-          {/*  Text Section */}
-          <div className='text-center z-40 mt-40 scrn-500:mt-32 scrn-1000:mt-20 scrn-1300:mt-24'>
-            <p className='text-gray-800 px-4 flex flex-col'>
-              <span className='text-gray-800 text-9xl scrn-700:text-10xl scrn-900:font-extrabold scrn-900:text-gray-900 scrn-900:text-12xl scrn-1000:text-[16rem]'>404</span> <br />
-              <span className='text-red-600 font-bold text-3xl scrn-500:text-4xl scrn-700:text-5xl scrn-900:text-7xl scrn-1100:text-8xl'>Page Not Found</span> <br />
-              <span className='text-xl scrn-700:text-2xl'>The page you&apos;re looking for does not exist.</span>
-            </p>
-            <Link
-              href="/"
-              className='mt-6 tracking-wide inline-block px-4 py-1 rounded-2xl outline outline-red-600 text-gray-700 text-lg scrn-1500:text-2xl hover:text-white hover:bg-red-600 hover:scale-105 transform transition duration-300'
-            >
-              RETURN TO HOMEPAGE
-            </Link>
-          </div>
-        </div>
+        {/* Title */}
+        <span className="text-gray-400 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2">
+          Page Not Found
+        </span>
+
+        {/* Subtitle */}
+        <p className="text-gray-700 text-lg sm:text-xl md:text-2xl mt-4">
+          The page you’re looking for doesn’t exist or has been moved.
+        </p>
+
+        {/* Button */}
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          className="inline-block mt-8"
+        >
+          <Link
+            href="/"
+            className="px-6 py-3 rounded-full text-lg md:text-xl font-medium outline-2 outline-[#1DA978] text-gray-800 hover:bg-[#1DA978] hover:text-white transition-all duration-300"
+          >
+            RETURN TO HOMEPAGE
+          </Link>
+        </motion.div>
+      </motion.div>
+
+      {/* Footer-like spacing to keep vertical balance */}
+      <div className="mt-20 text-gray-500 text-sm">
+        © {new Date().getFullYear()} Geo Petroleum. All rights reserved.
       </div>
     </div>
   );
