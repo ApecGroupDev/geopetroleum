@@ -4,19 +4,18 @@ import type { Metadata } from "next";
 import Footer from "@/components/footer";
 import Hero_Home from "./home/hero_home";
 import Intro_Home from "./home/intro_home";
-import ExpertiseSection from "./home/expertise_home";
-import CoreServices from "./home/core_home";
-import IndustriesWeServe from "./home/industries_home";
-import TestimonialsSection from "./home/testimonials_home";
 import CTASection from "@/components/cta";
-import HomeFAQSection from "./home/faq_home";
 import MissionAssocs_Home from "./home/missionAssocs_home";
 import HomeSchema from "@/components/schema/HomeSchema";
+import Expertise_Home from "./home/expertise_home";
+import Core_Home from "./home/core_home";
+import Testimonial_Home from "./home/testimonials_home";
+import Industries_Home from "./home/industries_home";
+import FAQ_Home from "./home/faq_home";
 
 export const metadata: Metadata = {
-  title: "",
-  description:
-    "",
+  title: "Petroleum Company in Houston | Trusted Fuel & Environmental Experts",
+  description: "Geo Petroleum delivers safe, reliable petroleum and environmental services in Houston. Trusted experts for fuel systems, compliance, and infrastructure.",
   robots: "index, follow",
   alternates: {
     canonical: "https://www.geopetroleum.com/", // ✅ use full absolute URL (recommended by Next.js SEO docs)
@@ -34,13 +33,13 @@ export default function Page() {
         <Header />
         <Hero_Home />
         <Intro_Home />
-        <ExpertiseSection />
+        <Expertise_Home />
         <MissionAssocs_Home />
-        <CoreServices />
+        <Core_Home />
         <CTASection />
-        <TestimonialsSection />
-        <IndustriesWeServe />
-        <HomeFAQSection />
+        <Testimonial_Home />
+        <Industries_Home />
+        <FAQ_Home />
         <Footer />
       </div>
     </HomePageLayout>
