@@ -12,7 +12,7 @@ const testimonials = [
   },
 ];
 
-const TestimonialsSection: React.FC = () => {
+const Testimonial_Home: React.FC = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -89,4 +89,4 @@ const TestimonialsSection: React.FC = () => {
   );
 };
 
-export default TestimonialsSection;
+export default Testimonial_Home;

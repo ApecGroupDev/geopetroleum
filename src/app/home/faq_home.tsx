@@ -3,7 +3,7 @@
 import FAQ from "@/components/faq";
 import { motion } from "framer-motion";
 
-const HomeFAQSection = () => {
+const FAQ_Home = () => {
   const faqs = [
     {
       question: "Who do you serve?",
@@ -66,4 +66,4 @@ const HomeFAQSection = () => {
   );
 };
 
-export default HomeFAQSection;
+export default FAQ_Home;

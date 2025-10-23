@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, Shield, Wrench, Clock } from "lucide-react";
 import React from "react";
 
-const ExpertiseSection: React.FC = () => {
+const Expertise_Home: React.FC = () => {
   return (
     <section className="relative bg-[#f8f9fa] text-[#171717] py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,4 +72,4 @@ const ExpertiseSection: React.FC = () => {
   );
 };
 
-export default ExpertiseSection;
+export default Expertise_Home;

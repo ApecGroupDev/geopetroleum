@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Fuel, Building2, Factory, Truck, Store, Wrench } from "lucide-react";
 import React from "react";
 
-const IndustriesWeServe: React.FC = () => {
+const Industries_Home: React.FC = () => {
   return (
     <section className="relative bg-[#f8f9fa] text-[#171717] py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,4 +81,4 @@ const IndustriesWeServe: React.FC = () => {
   );
 };
 
-export default IndustriesWeServe;
+export default Industries_Home;

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Leaf, ShieldCheck, Camera, Factory } from "lucide-react";
 import React from "react";
 
-const CoreServices: React.FC = () => {
+const Core_Home: React.FC = () => {
   return (
     <section className="relative bg-[#ffffff] text-[#171717] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,4 +68,4 @@ const CoreServices: React.FC = () => {
   );
 };
 
-export default CoreServices;
+export default Core_Home;
