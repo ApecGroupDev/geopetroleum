@@ -28,16 +28,18 @@ const Hero_Home: React.FC = () => {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="z-10 max-w-xl text-center lg:text-left"
+          className="z-10 max-w-5xl text-center lg:text-left"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            Powering America’s <br />
-            <span className="text-primary">Fuel & Energy Future</span>
+            One-Stop-Shop for All Your Petroleum & Environmental Solutions — Powering Safety, Compliance, and Reliability
           </h1>
 
-          <p className="mt-6 text-gray-200 text-lg leading-relaxed max-w-md">
-            From equipment supply and environmental compliance to full-service construction —
-            Geo Petroleum is your trusted partner in the energy industry.
+          <p className="mt-6 text-gray-200 text-lg leading-relaxed max-w-3xl">
+            Backed by over 25 years of proven industry experience and a zero-incident safety record, 
+            Geo Petroleum is the leading petroleum company in Houston, trusted by fuel retailers, 
+            industrial operators, and municipalities. As one of the top Houston environmental companies, 
+            we proudly serve clients across Texas and the Southeast, delivering complete petroleum 
+            and environmental solutions.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
@@ -61,12 +63,12 @@ const Hero_Home: React.FC = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-          className="absolute  sm:right-12 lg:right-20 -bottom-16 lg:-bottom-20 bg-primary text-white rounded-3xl shadow-xl z-50
+          className="absolute sm:right-12 lg:right-20 -bottom-16 lg:-bottom-20 bg-primary text-white rounded-2xl shadow-xl z-50
                    w-[90%] right-6 sm:w-xl lg:w-3xl p-6 sm:p-8
                    flex items-center justify-center text-center"
         >
           <p className="text-lg sm:text-xl lg:text-4xl font-semibold leading-snug">
-            YOUR <span className="text-2xl sm:text-3xl lg:text-5xl italic">ONE-STOP SHOP </span> FOR ALL YOUR PETROLEUM NEEDS!
+            Leading the Way in Petroleum Equipment & Environmental Services
           </p>
         </motion.div>
       </div>
