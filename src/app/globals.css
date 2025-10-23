@@ -54,3 +54,8 @@ h6 {
   font-family: var(--font-montserrat), sans-serif;
   color: var(--color-foreground);
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
