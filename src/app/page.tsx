@@ -10,6 +10,8 @@ import IndustriesWeServe from "./home/industries_home";
 import TestimonialsSection from "./home/testimonials_home";
 import CTASection from "@/components/cta";
 import HomeFAQSection from "./home/faq_home";
+import MissionAssocs_Home from "./home/missionAssocs_home";
+import HomeSchema from "@/components/schema/HomeSchema";
 
 export const metadata: Metadata = {
   title: "",
@@ -28,10 +30,12 @@ export default function Page() {
 
       {/* ✅ Main Page Sections */}
       <div className="flex flex-col">
+        <HomeSchema />
         <Header />
         <Hero_Home />
         <Intro_Home />
         <ExpertiseSection />
+        <MissionAssocs_Home />
         <CoreServices />
         <CTASection />
         <TestimonialsSection />
