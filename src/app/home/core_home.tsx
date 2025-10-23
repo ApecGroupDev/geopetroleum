@@ -6,7 +6,7 @@ import React from "react";
 
 const CoreServices: React.FC = () => {
   return (
-    <section className="relative bg-[#ffffff] text-[#171717] py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-[#ffffff] text-[#171717] py-24 lg:py-32">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -20,8 +20,8 @@ const CoreServices: React.FC = () => {
             Comprehensive <span className="text-primary">Solutions</span> for Every Project
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            We provide end-to-end services that keep your business moving — from fueling infrastructure
-            to environmental compliance and construction management.
+            As one of the most trusted <span className="font-semibold">environmental companies in Texas</span>, we combine technical precision
+            with hands-on service — ensuring your project meets every safety, quality, and regulatory standard.
           </p>
         </motion.div>
 
@@ -31,22 +31,22 @@ const CoreServices: React.FC = () => {
             {
               icon: <Leaf className="w-12 h-12 text-primary" />,
               title: "Environmental Risk Assessment",
-              desc: "In-depth site evaluations and contamination analysis to ensure your facilities meet the highest environmental standards.",
+              desc: "Identify and mitigate hazards before they impact your operations.",
             },
             {
               icon: <ShieldCheck className="w-12 h-12 text-primary" />,
               title: "Environmental Compliance Solutions",
-              desc: "Custom compliance programs, reporting systems, and ongoing monitoring to keep your operations fully aligned with regulations.",
+              desc: "Stay ahead of EPA and TCEQ regulations with full compliance support.",
             },
             {
               icon: <Camera className="w-12 h-12 text-primary" />,
               title: "Canopy Imaging Solutions",
-              desc: "Advanced imaging and inspection technology for canopy structures — improving accuracy, safety, and documentation.",
+              desc: "Custom canopy design, fabrication, and lighting that elevate your brand.",
             },
             {
               icon: <Factory className="w-12 h-12 text-primary" />,
               title: "Fuel Tanks Manufacturing",
-              desc: "Precision-engineered tanks designed and built to meet modern fuel system demands and long-term durability standards.",
+              desc: "Precision-built aboveground and underground tanks for maximum safety and performance.",
             },
           ].map((item, i) => (
             <motion.div
@@ -64,9 +64,6 @@ const CoreServices: React.FC = () => {
           ))}
         </div>
       </div>
-
-      {/* Accent Gradient Line */}
-      <div className="absolute bottom-0 left-0 w-full h-[120px] bg-linear-to-t from-primary/20 to-transparent  pointer-events-none" />
     </section>
   );
 };
