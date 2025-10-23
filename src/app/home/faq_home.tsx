@@ -6,24 +6,39 @@ import { motion } from "framer-motion";
 const HomeFAQSection = () => {
   const faqs = [
     {
-      question: "What services does Geo Petroleum provide?",
+      question: "Who do you serve?",
       answer:
-        "We specialize in petroleum equipment installation, environmental compliance solutions, fuel tank manufacturing, and canopy imaging services tailored to your operational needs.",
+        "We serve fuel retailers, distributors, fleet operators, municipalities, and industrial clients across Texas and the Southeast.",
     },
     {
-      question: "Do you handle large-scale commercial projects?",
+      question: "What services do you offer?",
       answer:
-        "Absolutely. Our team has extensive experience with both small and large-scale commercial projects — from fueling stations to environmental monitoring sites.",
+        "We provide complete petroleum and environmental services — from risk assessment and compliance to canopy imaging and tank manufacturing.",
     },
     {
-      question: "Are your systems compliant with local regulations?",
+      question: "Are you one of Houston’s leading environmental companies?",
       answer:
-        "Yes. All our services follow strict environmental and safety standards to ensure full regulatory compliance across every project.",
+        "Yes — Geo Petroleum is recognized among top Houston environmental companies, known for innovation, safety, and reliability.",
     },
     {
-      question: "How can I request a project quote?",
+      question: "Do you offer environmental services outside Houston?",
       answer:
-        "You can reach out to us directly via phone at 855-444-2732 or email at info@geopetroleum.com. Our team will respond promptly to discuss your project details.",
+        "Absolutely — we offer comprehensive environmental services in Texas and neighboring states, providing inspection, compliance, and remediation expertise.",
+    },
+    {
+      question: "Do you handle permits and regulatory paperwork?",
+      answer:
+        "Yes — we take care of all compliance documentation, testing, and regulatory reporting so you can focus on your business.",
+    },
+    {
+      question: "Can you help upgrade existing sites or systems?",
+      answer:
+        "Definitely — our specialists retrofit, modernize, and replace old systems with up-to-date, compliant technology.",
+    },
+    {
+      question: "Do you provide emergency response or spill support?",
+      answer:
+        " Yes — our rapid-response team is available 24/7 for spills, leaks, and environmental emergencies.",
     },
   ];
 
