@@ -63,7 +63,7 @@ export default function MainContactForm() {
       "
     >
       {/* Input Fields */}
-      {["name", "email", "phone"].map((field) => (
+      {(["name", "email", "phone"] as const).map((field) => (
         <div key={field} className="relative group">
           <input
             type={field === "email" ? "email" : "text"}
@@ -75,22 +75,22 @@ export default function MainContactForm() {
                   ? "Email Address"
                   : "Phone Number"
             }
-            value={(formData as any)[field]}
+            value={formData[field]}
             onChange={handleChange}
             required={field !== "phone"}
             className="
-              w-full border-b border-gray-300 bg-transparent
-              outline-none py-3 text-base
-              placeholder-gray-500 transition-all duration-300
-              focus:border-[#00a651] focus:placeholder-transparent
-            "
+        w-full border-b border-gray-300 bg-transparent
+        outline-none py-3 text-base
+        placeholder-gray-500 transition-all duration-300
+        focus:border-[#00a651] focus:placeholder-transparent
+      "
           />
           <span
             className="
-              absolute left-0 bottom-0 h-px w-0
-              bg-[#00a651] transition-all duration-300
-              group-focus-within:w-full
-            "
+        absolute left-0 bottom-0 h-px w-0
+        bg-[#00a651] transition-all duration-300
+        group-focus-within:w-full
+      "
           />
         </div>
       ))}
