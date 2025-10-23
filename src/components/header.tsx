@@ -37,8 +37,10 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY, isLargeScreen]);
 
-  const isActive = (path: string) =>
-    path === "/" ? pathname === "/" : pathname.startsWith(path);
+  const isActive = (path: string) => {
+    if (path === "/") return pathname === "/";
+    return pathname === path || pathname.startsWith(path + "/");
+  };
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const toggleDropdown = () => setShowDropdown((prev) => !prev);
@@ -79,24 +81,23 @@ const Header: React.FC = () => {
                   onMouseEnter={() => setShowDropdown(true)}
                   onMouseLeave={() => setShowDropdown(false)}
                 >
-                  <div
-                    className={`flex items-center h-full px-4 cursor-pointer text-base transition-colors duration-200 ${pathname.startsWith(path)
-                      ? "bg-primary text-white"
-                      : "text-gray-800 hover:bg-primary hover:text-white"
-                      }`}
+                  <Link
+                    href={path}
+                    className={`relative flex items-center h-full px-4 text-base transition-all duration-300
+                    ${isActive(path)
+                        ? "text-primary after:w-full"
+                        : "text-gray-800 hover:text-primary after:w-0 hover:after:w-full"}
+                          after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-primary after:transition-all after:duration-300`}
                   >
-                    <Link href={path} className="flex items-center h-full">
-                      {label}
-                      <ChevronDown
-                        className={`w-5 h-5 ml-1 transition-transform duration-200 ${showDropdown ? "rotate-180" : ""
-                          }`}
-                      />
-                    </Link>
-                  </div>
+                    {label}
+                    <ChevronDown
+                      className={`w-5 h-5 ml-1 transition-transform duration-200 ${showDropdown ? "rotate-180" : ""}`}
+                    />
+                  </Link>
 
-                  {/* DROPDOWN */}
+                  {/* DROPDOWN MENU */}
                   {showDropdown && (
-                    <div className="absolute top-full left-0 w-auto bg-white/60 backdrop-blur-sm z-50 whitespace-nowrap rounded-md shadow">
+                    <div className="absolute top-full left-0 w-auto bg-gray-500 border border-gray-200 shadow-lg rounded-md z-50 whitespace-nowrap">
                       <Link
                         href="/services/environmental-risk-assessment"
                         className="block px-4 py-2 hover:bg-primary hover:text-white rounded-t-md"
@@ -111,8 +112,6 @@ const Header: React.FC = () => {
                       </Link>
                       <Link
                         href="/services/canopy-imaging-solutions"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="block px-4 py-2 hover:bg-primary hover:text-white"
                       >
                         Canopy Imaging Solutions
@@ -130,13 +129,15 @@ const Header: React.FC = () => {
                 <Link
                   key={path}
                   href={path}
-                  className={`flex items-center h-full px-4 transition-colors duration-200 ${pathname.startsWith(path)
-                    ? "bg-primary text-white"
-                    : "text-gray-800 hover:bg-primary hover:text-white"
-                    }`}
+                  className={`relative flex items-center h-full px-4 text-base transition-all duration-300
+                  ${isActive(path)
+                      ? "text-primary after:w-full"
+                      : "text-gray-800 hover:text-primary after:w-0 hover:after:w-full"}
+                        after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-1 after:bg-primary after:transition-all after:duration-300`}
                 >
                   {label}
                 </Link>
+
               )
             )}
           </nav>
@@ -166,112 +167,128 @@ const Header: React.FC = () => {
       {/* MOBILE MENU (ANIMATED) */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            key="mobile-menu"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="lg:hidden bg-white shadow-md border-t border-gray-200 overflow-hidden"
-          >
-            <nav className="flex flex-col text-gray-800">
-              {[
-                { label: "HOME", path: "/" },
-                { label: "SERVICES", path: "/services" },
-                { label: "CAREERS", path: "/careers" },
-                { label: "BLOG", path: "/blogs" },
-                { label: "CONTACT", path: "/contact" },
-              ].map(({ label, path }) =>
-                label === "SERVICES" ? (
-                  <div key={path}>
-                    <button
-                      onClick={toggleDropdown}
-                      className={`flex justify-between items-center w-full px-6 py-3 text-left transition-colors duration-200 ${pathname.startsWith(path)
-                        ? "bg-primary text-white"
-                        : "hover:bg-primary hover:text-white"
-                        }`}
+          <>
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.4 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black z-40"
+              onClick={() => setIsOpen(false)}
+            />
+
+            {/* Menu Panel */}
+            <motion.div
+              key="mobile-menu"
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="fixed top-0 left-0 right-0 z-50 mt-16 bg-white/95 backdrop-blur-md shadow-xl border-t border-gray-200 rounded-b-2xl overflow-hidden"
+            >
+              <nav className="flex flex-col text-gray-800">
+                {[
+                  { label: "HOME", path: "/" },
+                  { label: "SERVICES", path: "/services" },
+                  { label: "CAREERS", path: "/careers" },
+                  { label: "BLOG", path: "/blogs" },
+                  { label: "CONTACT", path: "/contact" },
+                ].map(({ label, path }) =>
+                  label === "SERVICES" ? (
+                    <div key={path} className="overflow-hidden">
+                      <button
+                        onClick={toggleDropdown}
+                        className={`flex justify-between items-center w-full px-6 py-3 text-left font-medium text-lg tracking-wide transition-all duration-200
+                    ${isActive(path)
+                            ? "text-primary border-l-4 border-primary bg-gray-50"
+                            : "text-gray-800 hover:text-primary hover:bg-gray-50"}
+                  `}
+                      >
+                        {label}
+                        <ChevronDown
+                          className={`w-5 h-5 transition-transform duration-200 ${showDropdown ? "rotate-180 text-primary" : ""}`}
+                        />
+                      </button>
+
+                      <AnimatePresence>
+                        {showDropdown && (
+                          <motion.div
+                            key="mobile-dropdown"
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            variants={{
+                              hidden: { opacity: 0, y: -10 },
+                              visible: {
+                                opacity: 1,
+                                y: 0,
+                                transition: { staggerChildren: 0.05 },
+                              },
+                            }}
+                            className="flex flex-col bg-gray-50 border-t border-gray-200"
+                          >
+                            {[
+                              { label: "Environmental Risk Assessment", path: "/services/environmental-risk-assessment" },
+                              { label: "Environmental Compliance Solutions", path: "/services/environmental-compliance-solutions" },
+                              { label: "Canopy Imaging Solutions", path: "/services/canopy-imaging-solutions" },
+                              { label: "Fuel Tanks Manufacturing", path: "/services/fuel-tanks-manufacturing" },
+                            ].map(({ label, path }) => (
+                              <motion.div
+                                key={path}
+                                variants={{
+                                  hidden: { opacity: 0, y: -5 },
+                                  visible: { opacity: 1, y: 0 },
+                                }}
+                              >
+                                <Link
+                                  href={path}
+                                  onClick={() => setIsOpen(false)}
+                                  className={`block pl-10 pr-6 py-2 text-[15px] transition-colors duration-200
+                              ${pathname === path
+                                      ? "text-primary font-semibold border-l-4 border-primary bg-white"
+                                      : "text-gray-700 hover:text-primary hover:bg-white"}
+                            `}
+                                >
+                                  {label}
+                                </Link>
+                              </motion.div>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <Link
+                      key={path}
+                      href={path}
+                      onClick={() => setIsOpen(false)}
+                      className={`px-6 py-3 font-medium text-lg transition-all duration-200 border-l-4 
+                  ${isActive(path)
+                          ? "text-primary border-primary bg-gray-50"
+                          : "border-transparent text-gray-800 hover:text-primary hover:bg-gray-50"}
+                `}
                     >
                       {label}
-                      <ChevronDown
-                        className={`w-5 h-5 transition-transform duration-200 ${showDropdown ? "rotate-180" : ""
-                          }`}
-                      />
-                    </button>
+                    </Link>
+                  )
+                )}
 
-                    {/* SERVICES DROPDOWN (MOBILE) */}
-                    <AnimatePresence>
-                      {showDropdown && (
-                        <motion.div
-                          key="mobile-dropdown"
-                          initial={{ opacity: 0, y: -10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -10 }}
-                          transition={{ duration: 0.2 }}
-                          className="flex flex-col bg-gray-50"
-                        >
-                          <Link
-                            href="/services/environmental-risk-assessment"
-                            className="pl-10 pr-6 py-2 hover:bg-primary hover:text-white"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            Environmental Risk Assessment
-                          </Link>
-                          <Link
-                            href="/services/environmental-compliance-solutions"
-                            className="pl-10 pr-6 py-2 hover:bg-primary hover:text-white"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            Environmental Compliance Solutions
-                          </Link>
-                          <Link
-                            href="/services/canopy-imaging-solutions"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pl-10 pr-6 py-2 hover:bg-primary hover:text-white"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            Canopy Imaging Solutions
-                          </Link>
-                          <Link
-                            href="/services/fuel-tanks-manufacturing"
-                            className="pl-10 pr-6 py-2 hover:bg-primary hover:text-white"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            Fuel Tanks Manufacturing
-                          </Link>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                ) : (
-                  <Link
-                    key={path}
-                    href={path}
-                    onClick={() => setIsOpen(false)}
-                    className={`px-6 py-3 transition-colors duration-200 ${pathname.startsWith(path)
-                      ? "bg-primary text-white"
-                      : "hover:bg-primary hover:text-white"
-                      }`}
-                  >
-                    {label}
-                  </Link>
-                )
-              )}
-
-              {/* MOBILE CTA */}
-              <Link
-                href="/contact-us#MainContactForm"
-                scroll={false}
-                onClick={() => setIsOpen(false)}
-                className="flex items-center justify-center gap-2 bg-primary text-white py-4 hover:bg-green-800 transition"
-              >
-                <FaPhoneAlt className="text-lg" />
-                FREE CONSULTATION
-              </Link>
-            </nav>
-          </motion.div>
+                {/* MOBILE CTA */}
+                <Link
+                  href="/contact-us#MainContactForm"
+                  scroll={false}
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 bg-primary w-[80%] mx-auto rounded-full text-white py-4 mt-4 mb-6 font-semibold tracking-wide hover:bg-green-800 transition-all duration-300 shadow-md"
+                >
+                  <FaPhoneAlt className="text-lg" />
+                  FREE CONSULTATION
+                </Link>
+              </nav>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
+
     </header>
   );
 };
