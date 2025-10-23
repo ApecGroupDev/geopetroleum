@@ -22,14 +22,18 @@ const Intro_Home: React.FC = () => {
           viewport={{ once: true }}
           className="max-w-xl text-center lg:text-left"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b0b0b]! leading-tight">
+          {/* <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0b0b0b]! leading-tight">
             Leading the Way in <span className="text-[#1DA978]">Petroleum Equipment</span> & Environmental Services
-          </h2>
+          </h2> */}
 
           <p className="mt-6 text-gray-700 text-lg leading-relaxed">
-            Geo Petroleum delivers end-to-end solutions for petroleum operations — from storage tank manufacturing and fuel systems, to environmental risk assessment and compliance management.
+            In the petroleum and environmental industry, <span className="font-semibold">precision isn’t optional — it’s everything.</span> A single compliance error or system failure can lead to heavy fines, lost productivity, or even operational shutdowns.
             <br /><br />
-            With a foundation built on integrity and innovation, we help our partners maintain safety, efficiency, and sustainability across every project.
+            At <span className="font-semibold">Geo Petroleum</span>, we take that burden off your shoulders. From <span className="font-semibold">Environmental Risk Assessments</span> and <span className="font-semibold">Compliance Solutions</span> to <span className="font-semibold">Canopy Imaging</span> and <span className="font-semibold">Fuel Tank Manufacturing</span>, we provide turnkey support built on expertise, safety, and trust.
+            <br /><br />
+            Our <span className="font-semibold">Houston-based petroleum and environmental services team</span> ensures that every site — from retail fuel stations to industrial yards — runs <span className="font-semibold">safe, efficient, and fully compliant.</span>
+            <br /><br />
+            Whether you’re comparing <span className="font-semibold">environmental companies in Texas</span> or looking for a single partner for all your fuel infrastructure needs, <span className="font-semibold">Geo Petroleum</span> delivers reliability you can count on.
           </p>
 
           <div className="mt-8">
