@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Phone, Mail } from "lucide-react";
+import ScrollToContactButton from "./CTAbutton";
 
 const CTASection = () => {
   return (
@@ -56,13 +57,7 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         >
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#00a651] font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-          >
-            Get a Free Consultation
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <ScrollToContactButton />
         </motion.div>
       </div>
     </section>
