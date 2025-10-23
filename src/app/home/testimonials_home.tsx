@@ -6,24 +6,9 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "David H.",
-    company: "PetroTech Solutions",
-    text: "Geo Petroleum has been instrumental in keeping our fueling operations compliant and efficient. Their attention to detail and commitment to deadlines are unmatched.",
-  },
-  {
-    name: "Maria R.",
-    company: "EcoFuel Systems",
-    text: "Professional, responsive, and knowledgeable. Geo Petroleum’s team made our site upgrade seamless from start to finish.",
-  },
-  {
-    name: "James P.",
-    company: "FuelCo Logistics",
-    text: "Their maintenance team is always on point. Quick response, expert repairs, and genuine care for our operations.",
-  },
-  {
-    name: "Sophia L.",
-    company: "GreenLine Energy",
-    text: "From construction to environmental compliance, Geo Petroleum has proven to be a reliable long-term partner. Highly recommended.",
+    name: "Robert L.",
+    company: "Fuel Retailer, Houston, TX",
+    text: "Geo Petroleum’s team went above and beyond to identify compliance gaps at one of our sites. They resolved everything before our state inspection — saving us thousands in potential fines. Professional, responsive, and reliable.",
   },
 ];
 
