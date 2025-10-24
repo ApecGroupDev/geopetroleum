@@ -2,12 +2,12 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Metadata } from "next";
 import CTASection from "@/components/cta";
-import ServicesSchema from "@/components/schema/ServicesSchema";
 import FAQ_Blogs from "./sections/faq_blogs";
 import Hero_Blogs from "./sections/hero_blogs";
 import Intro_Blogs from "./sections/intro_blogs";
 import Topics_Blogs from "./sections/topics_blogs";
 import Audience_Blogs from "./sections/audience_blogs";
+import BlogsSchema from "@/components/schema/BlogsSchema";
 
 export const metadata: Metadata = {
   title: "Petroleum Industry Blogs & Insights | Geo Petroleum",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const Blogs: React.FC = () => {
   return (
     <div className='flex flex-col'>
-      <ServicesSchema />
+      <BlogsSchema />
       <Header />
       <Hero_Blogs />
       <Intro_Blogs />
