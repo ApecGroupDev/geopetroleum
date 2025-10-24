@@ -95,7 +95,7 @@ const Hero_Contact: React.FC = () => {
             href="mailto:Sales@GeoPetroleum.com"
             className="text-base sm:text-lg font-medium text-[#00a651] hover:underline hover:text-[#008d46] transition-colors duration-200"
           >
-            Sales@GeoPetroleum.com
+            info@geopetroleum.com
           </a>
         </div>
         <div className="flex items-center gap-3 text-gray-800 text-center sm:text-left">

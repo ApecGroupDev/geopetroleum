@@ -47,8 +47,8 @@ const OfficeProcess_Contact = () => {
               <MapPin className="w-6 h-6 text-primary mt-1 shrink-0" />
               <p>
                 <span className="font-semibold text-gray-900">Main Office (Headquarters)</span> <br />
-                505 Garden Oaks Blvd <br />
-                Houston, TX 77018
+                40 Lyerly Street <br />
+                Houston TX 77022
               </p>
             </div>
 
@@ -103,7 +103,7 @@ const OfficeProcess_Contact = () => {
             When you reach out to <span className="font-semibold text-primary">Geo Petroleum</span>, expect a transparent, fast, and professional experience:
           </p>
 
-          <div className="relative border-l-4 border-primary/20 pl-8 space-y-10">
+          <div className="relative pl-8 space-y-10">
             {steps.map((step, i) => (
               <motion.div
                 key={i}

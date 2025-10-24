@@ -109,8 +109,8 @@ const Footer: React.FC = () => {
 
           <div className="mt-4 text-sm text-gray-400 leading-relaxed">
             <p className="font-medium text-gray-200">Main Office:</p>
-            <p>505 Garden Oaks Blvd</p>
-            <p>Houston, TX 77018</p>
+            <p>40 Lyerly Street</p>
+            <p>Houston TX 77022</p>
           </div>
         </motion.div>
       </div>
