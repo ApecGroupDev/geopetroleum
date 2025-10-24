@@ -9,10 +9,16 @@ export default function ServicesSchema() {
         "@type": "LocalBusiness",
         "@id": "https://geopetroleum.com#localbusiness",
         "name": "Geo Petroleum",
-        "url": "https://geopetroleum.com/services/",
+        "url": "https://geopetroleum.com/services",
         "telephone": "000-000-0000",
         "email": "info@geopetroleum.com",
-        "description": "Geo Petroleum provides complete environmental operations and petroleum services including consulting, compliance management, canopy imaging, and fuel tank manufacturing. Based in Houston, TX, serving Texas and the Southeast.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://geopetroleum.com/logo.png"
+        },
+        "image": "https://geopetroleum.com/images/services-banner.jpg",
+        "description":
+          "Geo Petroleum provides complete environmental operations and petroleum services including consulting, compliance management, canopy imaging, and fuel tank manufacturing. Based in Houston, TX, serving Texas and the Southeast.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "505 Garden Oaks Blvd",
@@ -26,18 +32,20 @@ export default function ServicesSchema() {
           { "@type": "Place", "name": "Texas" },
           { "@type": "Place", "name": "Southeast USA" }
         ],
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "08:00",
-          "closes": "17:00"
-        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
         "memberOf": [
           {
             "@type": "Organization",
@@ -51,7 +59,8 @@ export default function ServicesSchema() {
           },
           {
             "@type": "Organization",
-            "name": "Greater Houston Retailers Cooperative Association (GHRA)",
+            "name":
+              "Greater Houston Retailers Cooperative Association (GHRA)",
             "sameAs": "https://www.ghraonline.com/"
           }
         ],
@@ -65,7 +74,8 @@ export default function ServicesSchema() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Environmental Risk Assessment",
-                "description": "Site evaluation, testing, and risk mitigation to prevent environmental hazards and maintain compliance."
+                "description":
+                  "Site evaluation, testing, and risk mitigation to prevent environmental hazards and maintain compliance."
               }
             },
             {
@@ -73,7 +83,8 @@ export default function ServicesSchema() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Environmental Compliance Solutions",
-                "description": "Permitting, testing, and documentation to meet EPA, TCEQ, and state-level petroleum regulations."
+                "description":
+                  "Permitting, testing, and documentation to meet EPA, TCEQ, and state-level petroleum regulations."
               }
             },
             {
@@ -81,7 +92,8 @@ export default function ServicesSchema() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Canopy Imaging Solutions",
-                "description": "Design, fabrication, and installation of branded canopies and lighting systems for fuel stations."
+                "description":
+                  "Design, fabrication, and installation of branded canopies and lighting systems for fuel stations."
               }
             },
             {
@@ -89,10 +101,15 @@ export default function ServicesSchema() {
               "itemOffered": {
                 "@type": "Service",
                 "name": "Fuel Tanks Manufacturing",
-                "description": "Custom manufacturing and installation of aboveground and underground fuel tanks built to EPA and UL standards."
+                "description":
+                  "Custom manufacturing and installation of aboveground and underground fuel tanks built to EPA and UL standards."
               }
             }
           ]
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://geopetroleum.com/services"
         }
       }
     ]

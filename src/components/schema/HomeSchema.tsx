@@ -6,13 +6,40 @@ export default function HomeSchema() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://geopetroleum.com#website",
+        "url": "https://geopetroleum.com",
+        "name": "Geo Petroleum",
+        "publisher": { "@id": "https://geopetroleum.com#organization" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://geopetroleum.com#organization",
+        "name": "Geo Petroleum",
+        "url": "https://geopetroleum.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://geopetroleum.com/logo.png"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/geopetroleum",
+          "https://www.facebook.com/geopetroleum"
+        ]
+      },
+      {
         "@type": "LocalBusiness",
         "@id": "https://geopetroleum.com#localbusiness",
         "name": "Geo Petroleum",
         "url": "https://geopetroleum.com",
         "telephone": "000-000-0000",
         "email": "info@geopetroleum.com",
-        "description": "Houston-based petroleum and environmental company offering risk assessment, compliance, canopy imaging, and fuel tank manufacturing across Texas and the Southeast.",
+        "description":
+          "Houston-based petroleum and environmental company offering risk assessment, compliance, canopy imaging, and fuel tank manufacturing across Texas and the Southeast.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://geopetroleum.com/logo.png"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "505 Garden Oaks Blvd",
@@ -43,13 +70,19 @@ export default function HomeSchema() {
             "sameAs": "https://www.ghraonline.com/"
           }
         ],
-        "slogan": "One-Stop-Shop for All Your Petroleum & Environmental Solutions",
+        "slogan":
+          "One-Stop-Shop for All Your Petroleum & Environmental Solutions",
         "foundingDate": "2000",
-        "missionStatement": "Delivering safe, compliant, and cost-effective petroleum and environmental services across Texas and the Southeast.",
+        "missionStatement":
+          "Delivering safe, compliant, and cost-effective petroleum and environmental services across Texas and the Southeast.",
         "sameAs": [
           "https://www.linkedin.com/company/geopetroleum",
           "https://www.facebook.com/geopetroleum"
-        ]
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://geopetroleum.com"
+        }
       },
       {
         "@type": "Service",
@@ -61,7 +94,12 @@ export default function HomeSchema() {
           { "@type": "Place", "name": "Texas" },
           { "@type": "Place", "name": "Southeast USA" }
         ],
-        "description": "Comprehensive petroleum and environmental services — from risk assessment and compliance management to canopy imaging and tank fabrication."
+        "description":
+          "Comprehensive petroleum and environmental services — from risk assessment and compliance management to canopy imaging and tank fabrication.",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://geopetroleum.com"
+        }
       },
       {
         "@type": "FAQPage",
@@ -72,7 +110,8 @@ export default function HomeSchema() {
             "name": "Who do you serve?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We serve fuel retailers, distributors, fleet operators, municipalities, and industrial clients across Texas and the Southeast."
+              "text":
+                "We serve fuel retailers, distributors, fleet operators, municipalities, and industrial clients across Texas and the Southeast."
             }
           },
           {
@@ -80,7 +119,8 @@ export default function HomeSchema() {
             "name": "Are you one of Houston’s leading environmental companies?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes — Geo Petroleum is recognized among top Houston environmental companies, known for innovation, safety, and reliability."
+              "text":
+                "Yes — Geo Petroleum is recognized among top Houston environmental companies, known for innovation, safety, and reliability."
             }
           },
           {
@@ -88,10 +128,15 @@ export default function HomeSchema() {
             "name": "Do you offer environmental services outside Houston?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absolutely — we offer comprehensive environmental services in Texas and neighboring states, providing inspection, compliance, and remediation expertise."
+              "text":
+                "Absolutely — we offer comprehensive environmental services in Texas and neighboring states, providing inspection, compliance, and remediation expertise."
             }
           }
-        ]
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://geopetroleum.com"
+        }
       }
     ]
   };

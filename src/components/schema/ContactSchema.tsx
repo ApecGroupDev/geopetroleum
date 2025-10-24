@@ -5,8 +5,10 @@ export default function ContactPageSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
+    "@id": "https://geopetroleum.com/contact#contactpage",
     "mainEntity": {
       "@type": "Organization",
+      "@id": "https://geopetroleum.com#organization",
       "name": "Geo Petroleum",
       "url": "https://geopetroleum.com",
       "contactPoint": {
@@ -24,8 +26,13 @@ export default function ContactPageSchema() {
         "postalCode": "77018",
         "addressCountry": "US"
       },
-      "description": "Contact Geo Petroleum, a trusted petroleum services company based in Houston, TX. We provide environmental risk assessments, compliance, canopy design, and fuel tank manufacturing across Texas and the Southeast."
+      "description":
+        "Contact Geo Petroleum, a trusted petroleum services company based in Houston, TX. We provide environmental risk assessments, compliance, canopy design, and fuel tank manufacturing across Texas and the Southeast."
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://geopetroleum.com/contact"
+    }
   };
 
   return <SchemaMarkup id="contact-page-schema" data={schema} />;
