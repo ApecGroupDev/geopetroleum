@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const features = [
-  "25+ years of petroleum and environmental experience",
+  "35+ years of petroleum and environmental experience",
   "Fully licensed, insured, and safety-certified professionals",
   "Proven expertise in EPA and TCEQ compliance",
   "Houston-based, proudly serving all of Texas and the Southeast",
