@@ -93,10 +93,10 @@ const Footer: React.FC = () => {
           </h3>
           <p className="text-sm text-gray-400 leading-relaxed">
             <a
-              href="tel:000-000-0000"
+              href="tel:844-GEO-4040"
               className="hover:text-[#1DA978] transition-colors"
             >
-              000-000-0000
+              844-GEO-4040
             </a>
             <br />
             <a
