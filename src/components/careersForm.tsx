@@ -82,22 +82,24 @@ export default function CareersForm() {
       </p>
 
       {/* Input Fields */}
-      {["name", "email", "phone", "department"].map((field) => (
-        <input
-          key={field}
-          type={field === "email" ? "email" : "text"}
-          name={field}
-          placeholder={
-            field === "department"
-              ? "Preferred Department"
-              : field.charAt(0).toUpperCase() + field.slice(1)
-          }
-          value={(formData as any)[field]}
-          onChange={handleChange}
-          required={field !== "phone"}
-          className="w-full border border-gray-300 rounded-lg py-3 px-4 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-        />
-      ))}
+      {(["name", "email", "phone", "department"] as (keyof CareersFormData)[]).map(
+        (field) => (
+          <input
+            key={field}
+            type={field === "email" ? "email" : "text"}
+            name={field}
+            placeholder={
+              field === "department"
+                ? "Preferred Department"
+                : field.charAt(0).toUpperCase() + field.slice(1)
+            }
+            value={formData[field]}
+            onChange={handleChange}
+            required={field !== "phone"}
+            className="w-full border border-gray-300 rounded-lg py-3 px-4 text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+          />
+        )
+      )}
 
       {/* Message */}
       <textarea
