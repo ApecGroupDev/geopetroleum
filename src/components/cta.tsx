@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRight, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import ScrollToContactButton from "./CTAbutton";
 
 const CTASection = () => {

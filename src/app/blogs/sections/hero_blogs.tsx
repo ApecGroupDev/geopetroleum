@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
 
 const Hero_Blogs: React.FC = () => {
   return (
