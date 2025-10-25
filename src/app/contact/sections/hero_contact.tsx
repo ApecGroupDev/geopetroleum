@@ -41,10 +41,10 @@ const Hero_Contact: React.FC = () => {
               Contact Us Now
             </button>
             <a
-              href="tel:+00000000"
+              href="tel:844-GEO-4040"
               className="flex items-center justify-center gap-2 text-[#00a651] font-medium hover:text-[#008d46] transition"
             >
-              <Phone className="w-5 h-5" /> 000-000-0000
+              <Phone className="w-5 h-5" /> 844-GEO-4040
             </a>
           </div>
         </motion.div>
@@ -85,8 +85,8 @@ const Hero_Contact: React.FC = () => {
       >
         <div className="flex items-center gap-3 text-gray-800 text-center sm:text-left">
           <Phone className="w-5 h-5 text-[#00a651]" />
-          <a href="tel:+00000000" className="text-base sm:text-lg font-medium">
-            000-000-0000
+          <a href="tel:844-GEO-4040" className="text-base sm:text-lg font-medium">
+            844-GEO-4040
           </a>
         </div>
         <div className="flex items-center gap-3 text-gray-800 text-center sm:text-left">
