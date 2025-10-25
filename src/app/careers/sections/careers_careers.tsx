@@ -57,12 +57,12 @@ const Careers_Careers = () => {
             <div className="mt-10 border-t border-gray-200 pt-6 space-y-3 text-gray-700">
               <p className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-[#00a651]" />
-                <span>Main Office: 505 Garden Oaks Blvd, Houston, TX 77018</span>
+                <span>Main Office: 40 Lyerly Street, Houston, TX 77022</span>
               </p>
-              <p className="flex items-center gap-3">
+              <a href="tel:844-GEO-4040" className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#00a651]" />
-                <span>Phone: (000) 000-0000</span>
-              </p>
+                <span>Phone: 844-GEO-4040</span>
+              </a>
             </div>
           </motion.div>
 
