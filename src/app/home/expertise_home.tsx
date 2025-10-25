@@ -20,7 +20,7 @@ const Expertise_Home: React.FC = () => {
             Why Businesses Trust <span className="text-primary">Geo Petroleum</span>
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            For over two decades, we’ve been the backbone of reliable petroleum equipment,
+            For over three decades, we’ve been the backbone of reliable petroleum equipment,
             construction, and compliance services. Our commitment to quality, safety, and client success
             defines who we are.
           </p>
@@ -32,7 +32,7 @@ const Expertise_Home: React.FC = () => {
             {
               icon: <CheckCircle className="text-primary w-10 h-10 mb-4" />,
               title: "Proven Experience",
-              desc: "Over 25 years serving top petroleum and construction companies across the U.S.",
+              desc: "Over 35 years serving top petroleum and construction companies across the U.S.",
             },
             {
               icon: <Shield className="text-primary w-10 h-10 mb-4" />,
