@@ -35,7 +35,7 @@ const Hero_Home: React.FC = () => {
           </h1>
 
           <p className="mt-6 text-gray-200 text-lg leading-relaxed max-w-3xl">
-            Backed by over 25 years of proven industry experience and a zero-incident safety record, 
+            Backed by over 35 years of proven industry experience and a zero-incident safety record, 
             Geo Petroleum is the leading petroleum company in Houston, trusted by fuel retailers, 
             industrial operators, and municipalities. As one of the top Houston environmental companies, 
             we proudly serve clients across Texas and the Southeast, delivering complete petroleum 
