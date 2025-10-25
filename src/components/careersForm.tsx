@@ -117,7 +117,7 @@ export default function CareersForm() {
         <div className="flex items-center gap-3">
           <label
             htmlFor="resume"
-            className="cursor-pointer bg-primary text-white font-medium py-2 px-6 rounded-md hover:bg-[#a91f28] transition-all"
+            className="cursor-pointer bg-primary text-white font-medium py-2 px-6 rounded-md hover:bg-green-700 transition-all"
           >
             Choose File
           </label>
@@ -138,7 +138,7 @@ export default function CareersForm() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="w-full bg-primary text-white font-semibold py-3 rounded-md hover:bg-[#a91f28] transition-all"
+        className="w-full bg-primary text-white font-semibold py-3 rounded-md hover:bg-green-700 transition-all"
       >
         Submit Application
       </button>
