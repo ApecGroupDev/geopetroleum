@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="relative bg-linear-to-b from-[#1b1b1b] via-[#202020] to-[#242424] text-gray-300 font-inter overflow-hidden">
       {/* Accent line */}
-      <div className="absolute top-0 left-0 w-full h-[4px] bg-linear-to-r from-transparent via-[#1DA978] to-transparent" />
+      <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-[#1DA978] to-transparent" />
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* 1️⃣ Brand */}
