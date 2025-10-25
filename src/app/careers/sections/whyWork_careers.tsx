@@ -27,7 +27,7 @@ const WhyWork_Careers = () => {
     },
     {
       icon: <Award className="w-6 h-6 text-[#00a651]" />,
-      title: "25+ years of leadership",
+      title: "35+ years of leadership",
       desc: "Be part of a company recognized for excellence in petroleum infrastructure and environmental compliance.",
     },
   ];
