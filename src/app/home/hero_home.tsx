@@ -1,11 +1,21 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 const Hero_Home: React.FC = () => {
+  const [showGif, setShowGif] = useState(false);
+
+  // Alternate between GIF and image every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowGif((prev) => !prev);
+    }, 7000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative bg-[#f5f5f5]">
       {/* Background image */}
@@ -17,8 +27,6 @@ const Hero_Home: React.FC = () => {
           priority
           className="object-cover object-center opacity-90"
         />
-        {/* Overlay gradient for text readability */}
-        <div className="absolute inset-0 bg-linear-to-r from-[#0b0b0b]/80 via-[#0b0b0b]/50 to-transparent" />
       </div>
 
       {/* Main Content */}
@@ -28,17 +36,17 @@ const Hero_Home: React.FC = () => {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="z-10 max-w-5xl text-center lg:text-left"
+          className="z-10 max-w-4xl text-center lg:text-left"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-            One-Stop-Shop for All Your Petroleum & Environmental Solutions — Powering Safety, Compliance, and Reliability
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight">
+            <span className="text-primary">One-Stop-Shop</span> for All Your Petroleum & Environmental Solutions — Powering Safety, Compliance, and Reliability
           </h1>
 
-          <p className="mt-6 text-gray-200 text-lg leading-relaxed max-w-3xl">
-            Backed by over 35 years of proven industry experience and a zero-incident safety record, 
-            Geo Petroleum is the leading petroleum company in Houston, trusted by fuel retailers, 
-            industrial operators, and municipalities. As one of the top Houston environmental companies, 
-            we proudly serve clients across Texas and the Southeast, delivering complete petroleum 
+          <p className="mt-6 text-gray-900 text-lg leading-relaxed max-w-3xl">
+            Backed by over 35 years of proven industry experience and a zero-incident safety record,
+            Geo Petroleum is the leading petroleum company in Houston, trusted by fuel retailers,
+            industrial operators, and municipalities. As one of the top Houston environmental companies,
+            we proudly serve clients across Texas and the Southeast, delivering complete petroleum
             and environmental solutions.
           </p>
 
@@ -51,14 +59,48 @@ const Hero_Home: React.FC = () => {
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-3 rounded-full border border-white/40 text-white hover:bg-white hover:text-[#0b0b0b] transition-all duration-300"
+              className="px-6 py-3 rounded-full border border-primary text-gray-800 hover:bg-primary hover:text-gray-200 transition-all duration-300"
             >
               Get a Quote
             </Link>
           </div>
         </motion.div>
 
-        {/* Floating Tagline Div */}
+        {/* ✅ Right Side Alternating Image / GIF */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="relative w-full lg:w-[600px] h-[360px] lg:h-[420px] z-10"
+        >
+          <AnimatePresence mode="wait">
+            {showGif ? (
+              <motion.img
+                key="gif"
+                src="/images/home/final-animation.gif"
+                alt="Geo Petroleum animation"
+                className="absolute inset-0 w-full h-full object-cover"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+              />
+            ) : (
+              <motion.img
+                key="image"
+                src="/images/home/Hero_Home.png"
+                alt="Geo Petroleum equipment"
+                className="absolute inset-0 w-full h-full object-contain"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+              />
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Floating Tagline Div — untouched alignment */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
