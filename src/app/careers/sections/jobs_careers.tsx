@@ -21,13 +21,13 @@ const Jobs_Careers = () => {
     },
     {
       icon: <Cog className="w-6 h-6 text-[#00a651]" />,
-      title: "Fabrication Assistant – Houston, TX",
+      title: "Construction Heavy Equipment Operator – Houston, TX",
       intro:
-        "Entry-level position supporting our fuel tank manufacturing and canopy fabrication teams.",
+        "Entry-level to senior positions available to support field construction projects for GEO.",
       requirements: [
-        "Basic mechanical or welding knowledge",
-        "Ability to lift and handle materials safely",
-        "Team player with a strong work ethic",
+        "Must be able and physical fit to work long hours in TX weather",
+        "At least two years of field experience working in Petroleum industry",
+        "Must speak English and have work authorization",
       ],
       location: "Houston, TX",
       type: "Full-Time",
