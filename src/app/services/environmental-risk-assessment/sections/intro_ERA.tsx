@@ -59,7 +59,7 @@ const Intro_ERA = () => {
         >
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
-              src="/images/services/ERA/Intro_Era.webp"
+              src="/images/services/ERA/Intro_ERA_resized.webp"
               alt="Environmental Risk Assessment"
               width={700}
               height={500}
