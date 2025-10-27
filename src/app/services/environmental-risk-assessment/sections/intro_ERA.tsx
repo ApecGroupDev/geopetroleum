@@ -66,14 +66,8 @@ const Intro_ERA = () => {
               className="object-cover w-full h-full"
             />
           </div>
-          {/* Decorative shape */}
-          <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-[#00a651]/20 rounded-full blur-3xl" />
         </motion.div>
       </div>
-
-      {/* Background Accents */}
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#00a651]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-green-200/30 rounded-full blur-2xl" />
     </section>
   );
 };
