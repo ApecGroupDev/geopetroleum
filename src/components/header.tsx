@@ -147,7 +147,7 @@ const Header: React.FC = () => {
         {/* RIGHT: CTA */}
         <div className="hidden lg:flex ml-auto">
           <Link
-            href="/contact-us#MainContactForm"
+            href="/contact/#MainContactForm"
             scroll={false}
             className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none"
           >
@@ -276,7 +276,7 @@ const Header: React.FC = () => {
 
                 {/* MOBILE CTA */}
                 <Link
-                  href="/contact-us#MainContactForm"
+                  href="/contact#MainContactForm"
                   scroll={false}
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-2 bg-primary w-[80%] mx-auto rounded-full text-white py-4 mt-4 mb-6 font-semibold tracking-wide hover:bg-green-800 transition-all duration-300 shadow-md"
