@@ -23,7 +23,7 @@ export default function ScrollToContactButton() {
   return (
     <button
       onClick={handleClick}
-      className="inline-flex items-center gap-3 bg-white text-gray-600 outline-3 outline-primary font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+      className="inline-flex items-center gap-3 bg-white text-gray-600 cursor-pointer outline-3 outline-primary font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
     >
       Get a Free Consultation
       <ArrowRight className="w-5 h-5" />
