@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Services: React.FC = () => {
+const ERA: React.FC = () => {
   return (
     <div className='flex flex-col'>
       <ERASchema />
@@ -38,4 +38,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default ERA;
