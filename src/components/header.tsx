@@ -117,7 +117,8 @@ const Header: React.FC = () => {
                         Canopy Imaging Solutions
                       </Link>
                       <Link
-                        href="/services/fuel-tanks-manufacturing"
+                        href="https://www.metalproductsusa.com/"
+                        target="blank"
                         className="block px-4 py-2 hover:bg-primary hover:text-white rounded-b-md"
                       >
                         Fuel Tanks Manufacturing
