@@ -6,7 +6,7 @@ import { ShieldCheck, FileCheck, Globe2, Factory, Leaf, Award } from "lucide-rea
 const features = [
   {
     icon: <Award className="w-8 h-8 text-[#00a651]" />,
-    text: "25+ years of petroleum and environmental experience",
+    text: "35+ years of petroleum and environmental experience",
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-[#00a651]" />,

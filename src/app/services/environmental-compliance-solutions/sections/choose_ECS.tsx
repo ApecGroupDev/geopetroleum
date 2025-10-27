@@ -6,7 +6,7 @@ import { ShieldCheck, FileCheck, Globe2, ClipboardCheck, Users, Award } from "lu
 const features = [
   {
     icon: <Award className="w-8 h-8 text-[#00a651]" />,
-    text: "25+ years of petroleum compliance expertise",
+    text: "35+ years of petroleum compliance expertise",
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-[#00a651]" />,
