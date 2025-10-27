@@ -56,7 +56,7 @@ const Intro_Home: React.FC = () => {
         >
           <div className="absolute inset-0 bg-[#1DA978]/10 rounded-3xl blur-[80px]" />
           <Image
-            src="/images/intro-operations.webp"
+            src="/images/home/intro_home.jpg"
             alt="Geo Petroleum Operations"
             width={600}
             height={400}
