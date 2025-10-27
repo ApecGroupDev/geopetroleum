@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Services: React.FC = () => {
+const ECS: React.FC = () => {
   return (
     <div className='flex flex-col'>
       <ECSSchema />
@@ -36,4 +36,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default ECS;
