@@ -49,7 +49,7 @@ const Hero_Home: React.FC = () => {
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-3 rounded-full border border-primary text-gray-800 hover:bg-primary hover:text-gray-200 transition-all duration-300"
+              className="px-6 py-3 rounded-full border-2 border-primary text-gray-800 hover:bg-primary hover:text-white transition-all duration-300"
             >
               Get a Quote
             </Link>
