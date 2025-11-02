@@ -15,7 +15,7 @@ const Intro_CIS = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900! leading-tight mb-6">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight mb-6">
             Your Canopy is More Than Shelter —{" "}
             <span className="text-[#00a651]">It’s Your Brand Statement</span>
           </h2>
