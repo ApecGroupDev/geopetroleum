@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="flex flex-col items-center md:items-center"
         >
-          <h3 className="text-white text-lg font-semibold mb-4 tracking-wide">
+          <h3 className="text-white! text-lg font-semibold mb-4 tracking-wide">
             Quick Links
           </h3>
           <ul className="space-y-2 text-sm text-gray-400">
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center md:items-end text-center md:text-right"
         >
-          <h3 className="text-white text-lg font-semibold mb-4 tracking-wide">
+          <h3 className="text-white! text-lg font-semibold mb-4 tracking-wide">
             Contact Us
           </h3>
           <p className="text-sm text-gray-400 leading-relaxed">
