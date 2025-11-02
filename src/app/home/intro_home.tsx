@@ -38,7 +38,7 @@ const Intro_Home: React.FC = () => {
 
           <div className="mt-8">
             <a
-              href="/about"
+              href="/services"
               className="inline-block bg-[#1DA978] text-white px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform duration-300"
             >
               Learn More About Us
