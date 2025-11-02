@@ -26,8 +26,8 @@ const Hero_CIS: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center lg:text-left max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
-            Custom Canopy Imaging Solutions That Strengthen Your Brand and Attract More Customers
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
+            Custom <span className="text-primary">Canopy Imaging Solutions</span> That Strengthen Your Brand and Attract More Customers
           </h1>
 
           <p className="mt-6 text-lg text-gray-900 leading-relaxed">
