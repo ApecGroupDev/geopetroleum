@@ -14,7 +14,7 @@ const Intro_ERA = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900! leading-tight mb-6">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight mb-6">
             Environmental Risk Assessments That{" "}
             <span className="text-[#00a651]">Protect Your Business</span>
           </h1>
