@@ -14,13 +14,13 @@ const Intro_ECS = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900! leading-tight mb-6">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight mb-6">
             Environmental Compliance Solutions That{" "}
             <span className="text-[#00a651]">Protect Your Business and the Environment</span>
           </h1>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            With 25+ years of experience helping petroleum businesses stay compliant,
+            With 35+ years of experience helping petroleum businesses stay compliant,
             <span className="font-semibold text-[#00a651]"> Geo Petroleum</span> provides trusted environmental
             compliance solutions in Houston and across Texas — keeping your operations safe, certified, and
             inspection-ready.
