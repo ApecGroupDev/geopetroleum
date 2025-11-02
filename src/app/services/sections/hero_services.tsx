@@ -24,7 +24,7 @@ const Hero_Services = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
             Petroleum & Environmental <br className="hidden sm:block" />
             <span className="text-[#00a651]">Services That Power, Protect, </span>
             and Future-Proof Your Business
