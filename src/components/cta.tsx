@@ -27,7 +27,7 @@ const CTASection = () => {
           </p>
 
           {/* Contact Info */}
-          <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-center lg:justify-start gap-4 text-gray-800">
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-gray-800">
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-gray-700" />
               <a
