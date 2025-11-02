@@ -26,9 +26,9 @@ const Intro_Blogs = () => {
           viewport={{ once: true }}
           className="lg:w-1/2 text-center lg:text-left"
         >
-          <h1 className="text-5xl sm:text-6xl font-bold leading-tight text-gray-900!">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900!">
             Knowledge That Fuels <span className="text-[#00a651]">Progress</span>
-          </h1>
+          </h2>
 
           <p className="mt-6 text-lg sm:text-xl text-gray-700 leading-relaxed">
             The petroleum and environmental industry never stands still — and neither should you.
