@@ -14,8 +14,8 @@ const Hero_ERA: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center lg:text-left max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
-            Environmental Risk Assessments That Protect Your Site, Investment, and Reputation
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
+            <span className="text-primary">Environmental Risk Assessments</span> That Protect Your Site, Investment, and Reputation
           </h1>
           <p className="mt-4 text-lg text-gray-700 leading-relaxed">
             With <span className="font-semibold">35+ years of experience in petroleum systems and environmental safety, Geo Petroleum </span>
