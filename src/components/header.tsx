@@ -97,7 +97,7 @@ const Header: React.FC = () => {
 
                   {/* DROPDOWN MENU */}
                   {showDropdown && (
-                    <div className="absolute top-full left-0 w-auto bg-gray-500 border border-gray-200 shadow-lg rounded-md z-50 whitespace-nowrap">
+                    <div className="absolute top-full left-0 w-auto bg-gray-200 border text-gray-800! border-gray-200 shadow-lg rounded-md z-50 whitespace-nowrap">
                       <Link
                         href="/services/environmental-risk-assessment"
                         className="block px-4 py-2 hover:bg-primary hover:text-white rounded-t-md"
