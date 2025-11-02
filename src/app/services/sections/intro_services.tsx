@@ -11,7 +11,7 @@ const Intro_Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl sm:text-4xl font-bold text-gray-900! leading-tight"
+          className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight"
         >
           Petroleum Solutions Backed by Expertise, Integrity, and Proven Results
         </motion.h2>
