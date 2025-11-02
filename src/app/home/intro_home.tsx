@@ -31,7 +31,7 @@ const Intro_Home: React.FC = () => {
             <br /><br />
             At <span className="font-semibold">Geo Petroleum</span>, we take that burden off your shoulders. From <span className="font-semibold">Environmental Risk Assessments</span> and <span className="font-semibold">Compliance Solutions</span> to <span className="font-semibold">Canopy Imaging</span> and <span className="font-semibold">Fuel Tank Manufacturing</span>, we provide turnkey support built on expertise, safety, and trust.
             <br /><br />
-            Our <span className="font-semibold">Houston-based petroleum and environmental services team</span> ensures that every site — from retail fuel stations to industrial yards — runs <span className="font-semibold">safe, efficient, and fully compliant.</span>
+            Our <span className="font-semibold">Texas-based petroleum and environmental services team</span> ensures that every site — from retail fuel stations to industrial yards — runs <span className="font-semibold">safe, efficient, and fully compliant.</span>
             <br /><br />
             Whether you’re comparing <span className="font-semibold">environmental companies in Texas</span> or looking for a single partner for all your fuel infrastructure needs, <span className="font-semibold">Geo Petroleum</span> delivers reliability you can count on.
           </p>
