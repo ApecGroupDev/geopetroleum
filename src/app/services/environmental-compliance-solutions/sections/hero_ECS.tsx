@@ -24,11 +24,11 @@ const Hero_ECS: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center lg:text-left max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold lg:text-white! text-gray-900! leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold lg:text-white! text-gray-900! leading-tight">
             <span className="text-primary">Environmental Compliance Solutions</span> That Protect Your Business and the Environment
           </h1>
           <p className="mt-4 text-lg text-gray-900 lg:text-gray-100 leading-relaxed">
-            With <span className="font-semibold">25+ years of experience helping petroleum businesses stay compliant</span>,
+            With <span className="font-semibold">35+ years of experience helping petroleum businesses stay compliant</span>,
             Geo Petroleum provides trusted <span className="font-semibold">environmental compliance solutions in Houston and across Texas</span>,
             keeping your operations safe, certified, and inspection-ready.
           </p>
