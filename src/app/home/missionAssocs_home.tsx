@@ -48,9 +48,9 @@ const MissionAssocs_Home = () => {
 
           {/* Optional — add logos if available */}
           <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6">
-            <Image src="/logos/associations/PEI.webp" alt="PEI" width={80} height={80} className="opacity-80 hover:opacity-100 transition" />
-            <Image src="/logos/associations/TFFA.webp" alt="Texas Food & Fuel Association" width={100} height={100} className="opacity-80 hover:opacity-100 transition" />
-            <Image src="/logos/associations/GHRA.webp" alt="GHRA" width={90} height={90} className="opacity-80 hover:opacity-100 transition" />
+            <Image src="/logos/associations/PEI.webp" alt="PEI" width={80} height={80} className="hover:scale-110 transition" />
+            <Image src="/logos/associations/TFFA.webp" alt="Texas Food & Fuel Association" width={100} height={100} className="hover:scale-110 transition" />
+            <Image src="/logos/associations/GHRA.webp" alt="GHRA" width={90} height={90} className="hover:scale-110 transition" />
           </div>
         </motion.div>
       </div>
