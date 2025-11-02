@@ -15,11 +15,11 @@ const Hero_Contact: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center lg:text-left max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
-            Let’s Build Smarter, Safer Fuel & Environmental Solutions — Together
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
+            Let’s Build <span className="text-primary">Smarter, Safer</span> Fuel & Environmental Solutions — Together
           </h1>
           <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-            <span className="font-semibold">25+ years of trusted petroleum and environmental expertise. </span>
+            <span className="font-semibold">35+ years of trusted petroleum and environmental expertise. </span>
             Fully licensed, insured, and <span className="font-semibold">Houston-based</span>, delivering
             <span className="font-semibold"> compliance-first solutions</span> across <span className="font-semibold">Texas </span>
             and the <span className="font-semibold">Southeast.</span>
@@ -40,12 +40,12 @@ const Hero_Contact: React.FC = () => {
             >
               Contact Us Now
             </button>
-            <a
+            {/* <a
               href="tel:844-GEO-4040"
               className="flex items-center justify-center gap-2 text-[#00a651] font-medium hover:text-[#008d46] transition"
             >
               <Phone className="w-5 h-5" /> 844-GEO-4040
-            </a>
+            </a> */}
           </div>
         </motion.div>
 
