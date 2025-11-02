@@ -54,7 +54,7 @@ const OfficeProcess_Contact = () => {
 
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-primary" />
-              <a href="tel:+00000000">(000) 000-0000</a>
+              <a href="tel:844-GEO-4040">844-GEO-4040</a>
             </div>
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-primary" />
