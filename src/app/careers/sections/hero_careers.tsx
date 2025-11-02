@@ -14,8 +14,8 @@ const Hero_Careers: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center lg:text-left max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
-            Build Your Future with Houston’s Trusted Petroleum & Environmental Partner
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
+            <span className="text-primary">Build Your Future</span> with Houston’s Trusted Petroleum & Environmental Partner
           </h1>
         </motion.div>
 
