@@ -10,13 +10,13 @@ const Hero_Home: React.FC = () => {
     <section className="relative bg-[#f5f5f5]">
       {/* ✅ Background image */}
       <div className="absolute inset-0">
-        <Image
+        {/* <Image
           src="/images/hero-bg.webp"
           alt="Geo Petroleum operations background"
           fill
           priority
           className="object-cover object-center opacity-90"
-        />
+        /> */}
       </div>
 
       {/* ✅ Main Content */}
@@ -43,13 +43,13 @@ const Hero_Home: React.FC = () => {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
             <Link
               href="/services"
-              className="px-6 py-3 bg-primary text-white font-medium rounded-full hover:scale-105 transition-transform duration-300"
+              className="px-6 py-4 bg-primary text-white font-medium rounded-full hover:scale-105 transition-transform duration-300"
             >
               Explore Our Services
             </Link>
             <Link
               href="/contact"
-              className="px-6 py-3 rounded-full border-2 border-primary text-gray-800 hover:bg-primary hover:text-white transition-all duration-300"
+              className="px-6 py-4 rounded-full border-2 border-primary text-gray-800 hover:bg-primary hover:text-white transition-all duration-300"
             >
               Get a Quote
             </Link>
