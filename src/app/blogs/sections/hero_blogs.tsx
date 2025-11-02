@@ -14,11 +14,11 @@ const Hero_Blogs: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center lg:text-left max-w-4xl"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
-            Insights That Drive the Future — Petroleum & Environmental Industry Blogs
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900! leading-tight">
+            <span className="text-primary">Insights That Drive the Future</span> — Petroleum & Environmental Industry Blogs
           </h1>
           <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-            Backed by <span className="font-semibold">25+ years of industry expertise</span>, the Geo Petroleum Blog delivers trusted insights,
+            Backed by <span className="font-semibold">35+ years of industry expertise</span>, the Geo Petroleum Blog delivers trusted insights,
             actionable trends, and regulatory updates to help <span className="font-semibold">fuel retailers, environmental professionals,</span>
             and <span className="font-semibold">industry leaders</span> stay ahead in the fast-evolving <span className="font-semibold">petroleum industry</span>.
           </p>
