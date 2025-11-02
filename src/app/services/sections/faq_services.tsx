@@ -18,7 +18,7 @@ const FAQ_Services = () => {
     {
       question: "What makes Geo Petroleum different from other environmental companies in Houston, TX?",
       answer:
-        "We combine 25+ years of experience with full-scope capabilities — petroleum infrastructure, environmental compliance, canopy design, and fuel tank fabrication — all handled in-house.",
+        "We combine 35+ years of experience with full-scope capabilities — petroleum infrastructure, environmental compliance, canopy design, and fuel tank fabrication — all handled in-house.",
     },
     {
       question: "Are your consultants licensed in Texas?",
