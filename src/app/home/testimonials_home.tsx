@@ -10,6 +10,21 @@ const testimonials = [
     company: "Fuel Retailer, Houston, TX",
     text: "Geo Petroleum’s team went above and beyond to identify compliance gaps at one of our sites. They resolved everything before our state inspection — saving us thousands in potential fines. Professional, responsive, and reliable.",
   },
+  {
+    name: "Linda M.",
+    company: "Gas Station Owner, Sugar Land, TX",
+    text: "Our old canopy was faded and outdated. Geo Petroleum designed and installed a new LED canopy that completely transformed our site. It boosted visibility, and our sales went up within weeks. True professionals.",
+  },
+  {
+    name: "Carlos G.",
+    company: "Industrial Facility Manager, Baytown, TX",
+    text: "We were struggling with TCEQ reporting and documentation. Geo Petroleum’s compliance team took over everything — testing, permits, and record updates. Now we’re fully compliant and stress-free.",
+  },
+  {
+    name: "Jessica R.",
+    company: "Commercial Developer, Conroe, TX",
+    text: "Before opening our new site, we hired Geo Petroleum for an environmental risk assessment. They identified minor soil contamination early, coordinated cleanup, and saved us months of delays. Couldn’t ask for better service.",
+  },
 ];
 
 const Testimonial_Home: React.FC = () => {
@@ -18,7 +33,7 @@ const Testimonial_Home: React.FC = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
