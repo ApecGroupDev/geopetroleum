@@ -16,7 +16,7 @@ const Intro_Contact = () => {
           viewport={{ once: true }}
           className="text-center lg:text-left lg:w-1/2"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight">
             Have a Question? Need a Quote? <br className="hidden sm:block" />
             <span className="text-[#00a651]">
               Want Expert Advice on Your Next Project?
