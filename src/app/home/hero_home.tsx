@@ -64,7 +64,7 @@ const Hero_Home: React.FC = () => {
           className="relative w-full lg:w-[600px] h-[360px] 2xl:h-[420px] z-10 lg:mb-14 flex items-center justify-center"
         >
           <motion.img
-            src="/images/home/final-animation.gif"
+            src="/images/home/GeoOneStopShop.gif"
             alt="Geo Petroleum animation"
             className="w-full h-full object-contain"
             initial={{ opacity: 0 }}
