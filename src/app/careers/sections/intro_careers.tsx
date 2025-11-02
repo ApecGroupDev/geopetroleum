@@ -16,14 +16,14 @@ const Intro_Careers = () => {
           viewport={{ once: true }}
           className="text-center lg:text-left lg:w-1/2"
         >
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900! leading-tight">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900! leading-tight">
             Looking for a stable, growth-focused career in the{" "}
             <span className="text-[#00a651]">petroleum and environmental</span> industry?
-          </h1>
+          </h2>
 
           <p className="mt-6 text-lg text-gray-700 leading-relaxed">
             At <span className="font-semibold text-[#00a651]">Geo Petroleum</span>, we specialize in fuel system design, tank manufacturing, canopy imaging, and environmental compliance services.
-            For over 25 years, we’ve built the backbone of fuel infrastructure across Houston, Texas, and the Southeast — and we’re still expanding.
+            For over 35 years, we’ve built the backbone of fuel infrastructure across Houston, Texas, and the Southeast — and we’re still expanding.
           </p>
 
           <p className="mt-4 text-lg text-gray-700 leading-relaxed">
