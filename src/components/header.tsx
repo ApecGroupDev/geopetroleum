@@ -145,11 +145,21 @@ const Header: React.FC = () => {
         </div>
 
         {/* RIGHT: CTA */}
-        <div className="hidden lg:flex ml-auto">
+        <div className="flex xs:hidden ml-auto">
           <Link
             href="/contact/#MainContactForm"
             scroll={false}
-            className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none"
+            className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none me-3"
+          >
+            <FaPhoneAlt className="text-lg" />
+            FREE
+          </Link>
+        </div>
+        <div className="hidden xs:flex ml-auto">
+          <Link
+            href="/contact/#MainContactForm"
+            scroll={false}
+            className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none me-3 lg:me-0"
           >
             <FaPhoneAlt className="text-lg" />
             FREE CONSULTATION
@@ -185,7 +195,7 @@ const Header: React.FC = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="fixed top-0 left-0 right-0 z-50 mt-16 bg-white/95 backdrop-blur-md shadow-xl border-t border-gray-200 rounded-b-2xl overflow-hidden"
+              className="fixed top-0 left-0 right-0 z-50 mt-16 bg-white/95 backdrop-blur-md shadow-xl border-t border-gray-200 overflow-hidden py-2"
             >
               <nav className="flex flex-col text-gray-800">
                 {[
@@ -273,17 +283,6 @@ const Header: React.FC = () => {
                     </Link>
                   )
                 )}
-
-                {/* MOBILE CTA */}
-                <Link
-                  href="/contact#MainContactForm"
-                  scroll={false}
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-center gap-2 bg-primary w-[80%] mx-auto rounded-full text-white py-4 mt-4 mb-6 font-semibold tracking-wide hover:bg-green-800 transition-all duration-300 shadow-md"
-                >
-                  <FaPhoneAlt className="text-lg" />
-                  FREE CONSULTATION
-                </Link>
               </nav>
             </motion.div>
           </>
