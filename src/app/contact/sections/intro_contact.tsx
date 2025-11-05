@@ -5,7 +5,7 @@ import MainContactForm from "@/components/mainContactForm"; // ✅ import the fo
 
 const Intro_Contact = () => {
   return (
-    <section className="relative py-24 sm:py-32 bg-linear-to-b from-white to-gray-50 overflow-hidden">
+    <section className="relative py-32 bg-linear-to-b from-white to-gray-50 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-20">
 
         {/* LEFT CONTENT */}
