@@ -78,10 +78,6 @@ const Careers_Careers = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* Decorative accents */}
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#00a651]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-green-200/30 rounded-full blur-2xl" />
     </section>
   );
 };
