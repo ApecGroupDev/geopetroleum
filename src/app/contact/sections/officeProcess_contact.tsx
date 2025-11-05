@@ -29,7 +29,7 @@ const steps = [
 const OfficeProcess_Contact = () => {
   return (
     <section className="relative bg-white py-24 sm:py-32 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 text-center lg:text-left lg:items-start">
 
         {/* LEFT: Our Office */}
         <motion.div
@@ -42,7 +42,7 @@ const OfficeProcess_Contact = () => {
             Our <span className="text-primary">Office</span>
           </h2>
 
-          <div className="space-y-6 text-gray-700">
+          <div className="space-y-6 text-gray-700 items-center flex flex-col lg:block">
             <div className="flex items-start gap-3">
               <MapPin className="w-6 h-6 text-primary mt-1 shrink-0" />
               <p>
@@ -113,7 +113,7 @@ const OfficeProcess_Contact = () => {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <div className="absolute -left-[38px] top-0 w-8 h-8 bg-primary text-white font-bold rounded-full flex items-center justify-center shadow-sm">
+                <div className="absolute lg:-left-[38px] top-0 w-8 h-8 bg-primary text-white font-bold rounded-full flex items-center justify-center shadow-sm">
                   {step.number}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900!">{step.title}</h3>
