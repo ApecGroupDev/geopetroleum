@@ -146,24 +146,22 @@ const Header: React.FC = () => {
 
         {/* RIGHT: CTA */}
         <div className="flex xs:hidden ml-auto">
-          <Link
-            href="/contact/#MainContactForm"
-            scroll={false}
+          <a 
+            href="tel:844-GEO-4040"
             className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none me-3"
           >
             <FaPhoneAlt className="text-lg" />
             FREE
-          </Link>
+          </a>
         </div>
         <div className="hidden xs:flex ml-auto">
-          <Link
-            href="/contact/#MainContactForm"
-            scroll={false}
+          <a
+            href="tel:844-GEO-4040"
             className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none me-3 lg:me-0"
           >
             <FaPhoneAlt className="text-lg" />
             FREE CONSULTATION
-          </Link>
+          </a>
         </div>
 
         {/* MOBILE MENU ICON */}
