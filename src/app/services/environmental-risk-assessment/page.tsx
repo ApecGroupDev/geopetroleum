@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Geo Petroleum provides professional environmental risk assessments in Houston — identify hazards, ensure compliance, and protect your business investment.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.geopetroleum.com/environmental-risk-assessment',
+    canonical: 'https://www.geopetroleum.com/services/environmental-risk-assessment',
   },
 };
 
