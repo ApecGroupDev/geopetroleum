@@ -48,7 +48,7 @@ const Hero_Home: React.FC = () => {
               Explore Our Services
             </Link>
             <Link
-              href="/contact"
+              href="/contact#MainContactForm"
               className="px-6 py-4 rounded-full border-2 border-primary text-gray-800 hover:bg-primary hover:text-white transition-all duration-300"
             >
               Get a Quote
