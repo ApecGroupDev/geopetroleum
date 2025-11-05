@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Geo Petroleum delivers expert environmental compliance solutions in Houston — inspections, permitting, and testing to keep your business safe and certified.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.geopetroleum.com/environmental-compliance-solutions',
+    canonical: 'https://www.geopetroleum.com/services/environmental-compliance-solutions',
   },
 };
 
