@@ -40,31 +40,8 @@ const Hero_Contact: React.FC = () => {
             >
               Contact Us Now
             </button>
-            {/* <a
-              href="tel:844-GEO-4040"
-              className="flex items-center justify-center gap-2 text-[#00a651] font-medium hover:text-[#008d46] transition"
-            >
-              <Phone className="w-5 h-5" /> 844-GEO-4040
-            </a> */}
           </div>
         </motion.div>
-
-        {/* Right: Visual */}
-        {/* <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
-          className="relative mt-12 lg:mt-0 w-full lg:w-1/2 flex justify-center"
-        >
-          <div className="relative w-[90%] sm:w-[80%] max-w-md rounded-3xl overflow-hidden shadow-2xl">
-            <img
-              src="/images/contact-hero-map.webp"
-              alt="Geo Petroleum Locations Map"
-              className="w-full h-full object-cover opacity-90"
-            />
-            <div className="absolute inset-0 bg-[#00a651]/30 mix-blend-multiply" />
-          </div>
-        </motion.div> */}
       </div>
 
       {/* Floating Contact Card (Glassmorphism) */}
@@ -74,7 +51,7 @@ const Hero_Contact: React.FC = () => {
         transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
         className="
           absolute left-1/2 transform -translate-x-1/2 z-50
-          -bottom-16 sm:-bottom-28 md:-bottom-12
+          -bottom-28 md:-bottom-12
           backdrop-blur-md bg-white/70
           border border-white/40 shadow-2xl
           rounded-2xl
