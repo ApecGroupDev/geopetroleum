@@ -68,7 +68,7 @@ const Intro_ECS = () => {
         >
           <div className="relative rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
-              src="/images/services/ECS/Intro_ECS_New.png"
+              src="/images/services/ECS/Intro_ECS.webp"
               alt="Environmental Compliance Services"
               width={700}
               height={500}

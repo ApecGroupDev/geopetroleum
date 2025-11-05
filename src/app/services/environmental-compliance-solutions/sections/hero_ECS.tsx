@@ -8,7 +8,7 @@ const Hero_ECS: React.FC = () => {
       {/* ✅ Background Image */}
       <div className="absolute inset-0 bg-white">
         <img
-          src="/images/services/ECS/compliance.png" // replace with your image path
+          src="/images/services/ECS/Hero_ECS.webp"
           alt="Environmental Compliance Background"
           className="w-full h-full object-cover hidden lg:block"
         />
