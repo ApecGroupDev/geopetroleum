@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Transform your fuel station canopy with Geo Petroleum’s custom design, fabrication, and LED lighting solutions — built for impact and long-lasting quality.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.geopetroleum.com/canopy-imaging-solutions',
+    canonical: 'https://www.geopetroleum.com/services/canopy-imaging-solutions',
   },
 };
 
