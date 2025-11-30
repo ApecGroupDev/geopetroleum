@@ -1,15 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero_ECS: React.FC = () => {
   return (
     <section className="relative overflow-hidden">
       {/* ✅ Background Image */}
       <div className="absolute inset-0 bg-white">
-        <img
+        <Image
           src="/images/services/ECS/Hero_ECS.webp"
           alt="Environmental Compliance Background"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover hidden lg:block"
         />
         {/* ✅ Dark Overlay */}
