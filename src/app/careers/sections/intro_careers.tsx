@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const Intro_Careers = () => {
   return (
@@ -55,7 +56,7 @@ const Intro_Careers = () => {
         >
           <div className="relative w-full max-w-2xl">
             <div className="absolute inset-0 bg-linear-to-tr from-green-200 to-transparent blur-2xl rounded-3xl" />
-            <img
+            <Image
               src="/images/careers/Intro_Careers.webp"
               alt="Geo Petroleum Careers"
               width={600}
