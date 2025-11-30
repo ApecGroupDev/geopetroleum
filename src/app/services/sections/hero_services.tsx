@@ -1,15 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero_Services = () => {
   return (
     <section className="relative overflow-hidden bg-white">
       {/* ✅ Full Background Image */}
       <div className="absolute inset-0 hidden">
-        <img
+        <Image
           src="/images/services/Services.png" // 🖼️ Replace with your actual background image
           alt="Petroleum and Environmental Services"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover"
         />
         {/* ✅ Dark Overlay */}
