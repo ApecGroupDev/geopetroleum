@@ -101,6 +101,8 @@ export default function CareersForm() {
         )
       )}
 
+      {/* merge pull trigger */}      
+
       {/* Message */}
       <textarea
         name="message"
