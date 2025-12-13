@@ -101,8 +101,6 @@ export default function CareersForm() {
         )
       )}
 
-      {/* test push after token regeneration */}
-
       {/* Message */}
       <textarea
         name="message"
