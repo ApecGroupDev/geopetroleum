@@ -58,9 +58,10 @@ const Header: React.FC = () => {
           <Link href="/" className="flex items-center">
             <Image
               src="/logos/components/header/Geo-Petroleum.webp"
-              alt="Logo"
+              alt="Geo Petroleum Logo"
               width={227}
               height={208}
+              priority
               className="w-auto h-10 lg:h-14 hover:scale-105 transition-transform"
             />
           </Link>
@@ -146,7 +147,7 @@ const Header: React.FC = () => {
 
         {/* RIGHT: CTA */}
         <div className="flex xs:hidden ml-auto">
-          <a 
+          <a
             href="tel:844-GEO-4040"
             className="flex items-center gap-2 bg-primary text-white py-4 px-6 hover:bg-green-800 transition rounded-none me-3"
           >
