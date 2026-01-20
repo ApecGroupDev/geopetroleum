@@ -7,7 +7,7 @@ const Intro_Blogs = () => {
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-white via-gray-50 to-white py-28 sm:py-36">
       {/* Background texture / image accent */}
-      <div className="absolute inset-0 -z-10">
+      {/* <div className="absolute inset-0 -z-10">
         <Image
           src="/images/blogs-bg.jpg"
           alt="Geo Petroleum background"
@@ -15,7 +15,7 @@ const Intro_Blogs = () => {
           className="object-cover opacity-10"
         />
         <div className="absolute inset-0 bg-linear-to-r from-white/90 via-white/70 to-transparent" />
-      </div>
+      </div> */}
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-20 flex flex-col lg:flex-row items-center gap-16">
         {/* Left side text */}
