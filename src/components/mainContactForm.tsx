@@ -44,7 +44,7 @@ export default function MainContactForm() {
       if (response.ok) {
         setSubmitted(true);
         setFormData({ name: "", email: "", phone: "", message: "" });
-        setTimeout(() => setSubmitted(false), 4000); // auto-hide success
+        setTimeout(() => setSubmitted(false), 4000);
       } else {
         setError(true);
       }

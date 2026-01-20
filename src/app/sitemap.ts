@@ -1,7 +1,6 @@
-// app/sitemap.ts
 import type { MetadataRoute } from 'next'
 
-export const revalidate = 86400 // Re-generate daily
+export const revalidate = 86400
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.geopetroleum.com'
@@ -39,6 +38,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/services/canopy-imaging-solutions`,
       lastModified: new Date(),
     },
-    // Add more static pages as needed
   ]
 }

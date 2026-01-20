@@ -18,16 +18,13 @@ export const metadata: Metadata = {
   description: "Geo Petroleum delivers safe, reliable petroleum and environmental services in Houston. Trusted experts for fuel systems, compliance, and infrastructure.",
   robots: "index, follow",
   alternates: {
-    canonical: "https://www.geopetroleum.com/", // ✅ use full absolute URL (recommended by Next.js SEO docs)
+    canonical: "https://www.geopetroleum.com/",
   },
 };
 
 export default function Page() {
   return (
     <HomePageLayout>
-      {/* ✅ JSON-LD Schema */}
-
-      {/* ✅ Main Page Sections */}
       <div className="flex flex-col">
         <HomeSchema />
         <Header />
