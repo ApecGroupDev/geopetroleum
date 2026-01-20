@@ -27,7 +27,7 @@ const services = [
     icon: <Droplets className="w-12 h-12 text-[#00a651]" />,
     title: "Fuel Tank Manufacturing",
     desc: "Built for safety and performance. We engineer, fabricate, and install aboveground and underground fuel tanks that meet EPA, UL, and API standards — combining structural integrity with environmental compliance.",
-    link: "/services/fuel-tank-manufacturing",
+    link: "https://www.metalproductsusa.com/",
   },
 ];
 
