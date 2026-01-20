@@ -14,7 +14,7 @@ import Industries_Home from "./home/industries_home";
 import FAQ_Home from "./home/faq_home";
 
 export const metadata: Metadata = {
-  title: "Petroleum Company in Houston | Trusted Fuel & Environmental Experts",
+  title: "Petroleum Company in Houston | Fuel & Environmental Experts",
   description: "Geo Petroleum delivers safe, reliable petroleum and environmental services in Houston. Trusted experts for fuel systems, compliance, and infrastructure.",
   robots: "index, follow",
   alternates: {
