@@ -241,7 +241,7 @@ const Header: React.FC = () => {
                               { label: "Environmental Risk Assessment", path: "/services/environmental-risk-assessment" },
                               { label: "Environmental Compliance Solutions", path: "/services/environmental-compliance-solutions" },
                               { label: "Canopy Imaging Solutions", path: "/services/canopy-imaging-solutions" },
-                              { label: "Fuel Tanks Manufacturing", path: "/services/fuel-tanks-manufacturing" },
+                              { label: "Fuel Tanks Manufacturing", path: "https://www.metalproductsusa.com/" },
                             ].map(({ label, path }) => (
                               <motion.div
                                 key={path}
