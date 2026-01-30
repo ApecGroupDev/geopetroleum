@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           <div className="flex gap-3 mt-5">
             {[
               "https://www.facebook.com/",
-              "https://www.linkedin.com/",
+              "https://www.linkedin.com/company/geo-petroleum-inc",
               "https://www.instagram.com/",
               "https://twitter.com/",
             ].map((url, i) => (
