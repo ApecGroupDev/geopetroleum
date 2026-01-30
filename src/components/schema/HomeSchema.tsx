@@ -73,8 +73,6 @@ export default function HomeSchema() {
         "slogan":
           "One-Stop-Shop for All Your Petroleum & Environmental Solutions",
         "foundingDate": "2000",
-        "missionStatement":
-          "Delivering safe, compliant, and cost-effective petroleum and environmental services across Texas and the Southeast.",
         "sameAs": [
           "https://www.linkedin.com/company/geopetroleum",
           "https://www.facebook.com/geopetroleum"
