@@ -51,7 +51,7 @@ const Testimonial_ERA: React.FC = () => {
         className="absolute top-8 left-1/2 -translate-x-1/2 text-[280px] font-black leading-none
                    text-[#1a1a1a] opacity-[0.025] pointer-events-none select-none"
         style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
-      >"</div>
+      >&quot;</div>
 
       <div className="relative max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 z-10">
 
@@ -105,7 +105,7 @@ const Testimonial_ERA: React.FC = () => {
                 >
                   <p className="text-lg sm:text-xl text-[#333] leading-relaxed mb-8 italic"
                     style={{ fontFamily: "var(--font-body), sans-serif" }}>
-                    "{t.text}"
+                    &quot;{t.text}&quot;
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-px h-8 bg-primary" />
