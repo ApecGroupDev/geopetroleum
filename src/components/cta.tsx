@@ -98,7 +98,7 @@ const CTASection = () => {
             className="text-2xl sm:text-3xl lg:text-4xl font-black text-white! leading-tight"
             style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
           >
-            Let's Build a Reliable <br className="hidden sm:block" />
+            Let’s Build a Reliable <br className="hidden sm:block" />
             <span className="text-primary">Future Together</span>
           </h2>
 
