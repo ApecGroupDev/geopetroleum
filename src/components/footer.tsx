@@ -4,123 +4,283 @@ import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import Image from "next/image";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
+const QUICK_LINKS = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "Careers", href: "/careers" },
+  { label: "Blog", href: "/blogs" },
+  { label: "Contact", href: "/contact" },
+];
+
+const SERVICE_LINKS = [
+  {
+    label: "Environmental Risk Assessment",
+    href: "/services/environmental-risk-assessment",
+  },
+  {
+    label: "Environmental Compliance Solutions",
+    href: "/services/environmental-compliance-solutions",
+  },
+  {
+    label: "Canopy Imaging Solutions",
+    href: "/services/canopy-imaging-solutions",
+  },
+  {
+    label: "Fuel Tanks Manufacturing",
+    href: "https://www.metalproductsusa.com/",
+  },
+];
+
+const SOCIALS = [
+  "https://www.facebook.com/",
+  "https://www.linkedin.com/",
+  "https://www.instagram.com/",
+  "https://twitter.com/",
+];
+
+const SectionLabel = ({ text }: { text: string }) => (
+  <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+    <div className="h-px w-6 bg-primary" />
+    <span
+      className="text-[11px] font-black tracking-[0.22em] uppercase text-[#ccc]"
+      style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+    >
+      {text}
+    </span>
+  </div>
+);
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-linear-to-b from-[#1b1b1b] via-[#202020] to-[#242424] text-gray-300 font-inter overflow-hidden">
-      {/* Accent line */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-[#1DA978] to-transparent" />
+    <footer className="relative bg-[#1a1a1a] text-[#ccc] overflow-hidden border-t border-[#2a2a2a]">
+      {/* Engineering grid texture */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.18]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
 
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-20 grid grid-cols-1 md:grid-cols-3 gap-12">
-        {/* 1️⃣ Brand */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col items-center md:items-start text-center md:text-left"
-        >
-          <Image
-            src="/logos/components/header/Geo-Petroleum.webp"
-            alt="Geo Petroleum Logo"
-            width={240}
-            height={240}
-            className="w-auto h-20 sm:h-24 mb-4 transition-transform hover:scale-105 bg-white rounded-2xl"
-          />
-          <p className="text-sm text-gray-400 max-w-[320px] leading-relaxed">
-            Delivering excellence in environmental compliance, fuel management, and sustainable petroleum
-            solutions nationwide.
-          </p>
+      {/* Diagonal stripe accent left edge */}
+      <div
+        className="absolute top-0 left-0 w-48 h-full pointer-events-none opacity-[0.045]"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(-55deg, transparent, transparent 14px, rgba(255,255,255,0.06) 14px, rgba(255,255,255,0.06) 15px)",
+        }}
+      />
 
-          {/* Social Icons */}
-          <div className="flex gap-3 mt-5">
-            {[
-              "https://www.facebook.com/",
-              "https://www.linkedin.com/",
-              "https://www.instagram.com/",
-              "https://twitter.com/",
-            ].map((url, i) => (
-              <SocialIcon
-                key={i}
-                url={url}
-                target="_blank"
-                style={{ height: 34, width: 34, borderRadius: 6 }}
-                bgColor="#1DA978"
-                className="transition-transform hover:scale-110"
+      {/* Top green accent bar */}
+      <div className="relative h-[3px] w-full bg-primary" />
+
+      {/* ── MAIN CONTENT ── */}
+      <div className="relative max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-16">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
+          {/* 1. Brand — centered on mobile, left-aligned on desktop */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-60 xl:w-[260px] shrink-0
+                       flex flex-col items-center text-center
+                       lg:items-start lg:text-left
+                       gap-5 pb-8
+                       border-b border-[#2e2e2e]
+                       lg:border-b-0 lg:border-r lg:border-[#2e2e2e] lg:pr-8"
+          >
+            {/* Logo framed panel */}
+            <div className="relative border border-[#333] bg-[#f5f4f0] p-4 w-fit">
+              <div className="absolute -top-px -left-px w-3 h-3 bg-primary" />
+              <div className="absolute -top-px -right-px w-3 h-3 bg-primary" />
+              <div className="absolute -bottom-px -left-px w-3 h-3 bg-primary" />
+              <div className="absolute -bottom-px -right-px w-3 h-3 bg-primary" />
+              <Image
+                src="/logos/components/header/Geo-Petroleum.webp"
+                alt="Geo Petroleum Logo"
+                width={180}
+                height={180}
+                className="w-auto h-14"
               />
-            ))}
-          </div>
-        </motion.div>
+            </div>
 
-        {/* 2️⃣ Quick Links */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="flex flex-col items-center md:items-center"
-        >
-          <h3 className="text-white! text-lg font-semibold mb-4 tracking-wide">
-            Quick Links
-          </h3>
-          <ul className="space-y-2 text-sm text-gray-400">
-            {[
-              { label: "Home", href: "/" },
-              { label: "Services", href: "/services" },
-              { label: "Careers", href: "/careers" },
-              { label: "Blog", href: "/blogs" },
-              { label: "Contact", href: "/contact" },
-            ].map(({ label, href }) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className="hover:text-[#1DA978] transition-colors duration-200"
+            <p
+              className="text-sm text-[#888] leading-relaxed max-w-[280px]"
+              style={{ fontFamily: "var(--font-body), sans-serif" }}
+            >
+              Delivering excellence in environmental compliance, fuel
+              management, and sustainable petroleum solutions across Texas and
+              the Southeast.
+            </p>
+
+            <div className="flex items-center gap-2">
+              <div className="h-px w-6 bg-primary" />
+              <span
+                className="text-[10px] font-bold tracking-[0.22em] uppercase text-primary"
+                style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+              >
+                Est. 1988 · Houston, TX
+              </span>
+            </div>
+
+            <div className="flex gap-2">
+              {SOCIALS.map((url, i) => (
+                <SocialIcon
+                  key={i}
+                  url={url}
+                  target="_blank"
+                  style={{ height: 32, width: 32, borderRadius: 0 }}
+                  bgColor="var(--color-primary)"
+                  className="hover:opacity-80 transition-opacity duration-200"
+                />
+              ))}
+            </div>
+          </motion.div>
+
+          {/* 2–4. Links grid */}
+          <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+            {/* Quick Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.65 }}
+              className="flex flex-col items-center lg:items-start"
+            >
+              <SectionLabel text="Quick Links" />
+              <ul className="flex flex-col items-center lg:items-start gap-2.5">
+                {QUICK_LINKS.map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="flex items-center gap-2 text-[13px] text-[#888] hover:text-primary transition-colors duration-200 group"
+                      style={{ fontFamily: "var(--font-body), sans-serif" }}
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary opacity-40 group-hover:opacity-100 transition-opacity shrink-0" />
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Services */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              className="flex flex-col items-center lg:items-start"
+            >
+              <SectionLabel text="Services" />
+              <ul className="flex flex-col items-center lg:items-start gap-2.5">
+                {SERVICE_LINKS.map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="flex items-center gap-2 text-[13px] text-[#888] hover:text-primary transition-colors duration-200 group text-center lg:text-left"
+                      style={{ fontFamily: "var(--font-body), sans-serif" }}
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary opacity-40 group-hover:opacity-100 transition-opacity shrink-0" />
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Contact */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75 }}
+              className="flex flex-col items-center lg:items-start"
+            >
+              <SectionLabel text="Contact Us" />
+              <div className="flex flex-col items-center lg:items-start gap-4">
+                <a
+                  href="tel:844-GEO-4040"
+                  className="flex items-start gap-3 group"
                 >
-                  {label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
+                  <span className="mt-0.5 w-7 h-7 flex items-center justify-center bg-primary text-white shrink-0">
+                    <FaPhoneAlt className="text-[11px]" />
+                  </span>
+                  <span
+                    className="text-[13px] text-[#888] group-hover:text-primary transition-colors duration-200 mt-1"
+                    style={{ fontFamily: "var(--font-body), sans-serif" }}
+                  >
+                    844-GEO-4040
+                  </span>
+                </a>
 
-        {/* 3️⃣ Contact */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col items-center md:items-end text-center md:text-right"
-        >
-          <h3 className="text-white! text-lg font-semibold mb-4 tracking-wide">
-            Contact Us
-          </h3>
-          <p className="text-sm text-gray-400 leading-relaxed">
-            <a
-              href="tel:844-GEO-4040"
-              className="hover:text-[#1DA978] transition-colors"
-            >
-              844-GEO-4040
-            </a>
-            <br />
-            <a
-              href="mailto:info@geopetroleum.com"
-              className="hover:text-[#1DA978] transition-colors"
-            >
-              info@geopetroleum.com
-            </a>
-          </p>
+                <a
+                  href="mailto:info@geopetroleum.com"
+                  className="flex items-start gap-3 group"
+                >
+                  <span className="mt-0.5 w-7 h-7 flex items-center justify-center bg-primary text-white shrink-0">
+                    <FaEnvelope className="text-[11px]" />
+                  </span>
+                  <span
+                    className="text-[13px] text-[#888] group-hover:text-primary transition-colors duration-200 break-all mt-1"
+                    style={{ fontFamily: "var(--font-body), sans-serif" }}
+                  >
+                    info@geopetroleum.com
+                  </span>
+                </a>
 
-          <div className="mt-4 text-sm text-gray-400 leading-relaxed">
-            <p className="font-medium text-gray-200">Main Office:</p>
-            <p>40 Lyerly Street</p>
-            <p>Houston TX 77022</p>
+                <div className="flex items-start gap-3">
+                  <span className="mt-0.5 w-7 h-7 flex items-center justify-center bg-[#2a2a2a] text-[#888] shrink-0">
+                    <FaMapMarkerAlt className="text-[11px]" />
+                  </span>
+                  <div
+                    className="text-[13px] text-[#888] leading-relaxed mt-1"
+                    style={{ fontFamily: "var(--font-body), sans-serif" }}
+                  >
+                    <span className="font-semibold text-[#ccc] block">
+                      Main Office
+                    </span>
+                    40 Lyerly Street
+                    <br />
+                    Houston TX 77022
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
-      {/* Divider */}
-      <div className="border-t border-gray-800" />
+      {/* ── BOTTOM BAR ── */}
+      <div className="relative border-t border-[#2a2a2a]">
+        <div className="absolute top-0 left-6 lg:left-16 opacity-25">
+          <div className="w-5 h-5 border-t-2 border-l-2 border-white" />
+        </div>
+        <div className="absolute top-0 right-6 lg:right-16 opacity-25">
+          <div className="w-5 h-5 border-t-2 border-r-2 border-white" />
+        </div>
 
-      {/* Copyright */}
-      <div className="py-6 text-center text-gray-500 text-xs sm:text-sm">
-        © {new Date().getFullYear()} Geo Petroleum. All rights reserved.
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <span
+            className="text-[11px] text-[#555] tracking-wide"
+            style={{ fontFamily: "var(--font-body), sans-serif" }}
+          >
+            © {new Date().getFullYear()} Geo Petroleum. All rights reserved.
+          </span>
+          <div className="flex items-center gap-3">
+            <div className="h-px w-6 bg-[#333]" />
+            <span
+              className="text-[10px] font-bold tracking-[0.22em] uppercase text-[#444]"
+              style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+            >
+              Houston · Texas · Southeast
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   );
