@@ -40,7 +40,7 @@ const Testimonial_ECS: React.FC = () => {
         }} />
       <div className="absolute top-8 left-1/2 -translate-x-1/2 text-[280px] font-black leading-none
                      text-[#1a1a1a] opacity-[0.025] pointer-events-none select-none"
-        style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>"</div>
+        style={{ fontFamily: "var(--font-montserrat), sans-serif" }}>&quot;</div>
 
       <div className="relative max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 z-10">
         <motion.div
@@ -79,7 +79,7 @@ const Testimonial_ECS: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5, ease: "easeOut" }}>
                   <p className="text-lg sm:text-xl text-[#333] leading-relaxed mb-8 italic"
-                    style={{ fontFamily: "var(--font-body), sans-serif" }}>"{t.text}"</p>
+                    style={{ fontFamily: "var(--font-body), sans-serif" }}>&quot;{t.text}&quot;</p>
                   <div className="flex items-center gap-4">
                     <div className="w-px h-8 bg-primary" />
                     <div>
