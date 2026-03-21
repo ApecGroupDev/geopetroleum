@@ -76,7 +76,7 @@ const Testimonial_Home: React.FC = () => {
                    text-primary opacity-[0.04] pointer-events-none select-none"
         style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
       >
-        "
+        &quot;
       </div>
 
       <div className="relative max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
@@ -144,7 +144,7 @@ const Testimonial_Home: React.FC = () => {
                   className="text-[#444] text-lg sm:text-xl leading-relaxed italic mb-8 max-w-2xl mx-auto"
                   style={{ fontFamily: "var(--font-body), sans-serif" }}
                 >
-                  "{t.text}"
+                  &quot;{t.text}&quot;
                 </p>
 
                 {/* Divider */}
