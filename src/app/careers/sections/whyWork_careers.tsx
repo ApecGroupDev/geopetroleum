@@ -87,7 +87,7 @@ const WhyWork_Careers = () => {
           <div className="px-8 py-6">
             <p className="text-[15px] text-[#444] leading-relaxed italic mb-4"
               style={{ fontFamily: "var(--font-body), sans-serif" }}>
-              "Working at Geo Petroleum has given me the chance to grow my skills and take pride in work that matters."
+              &quot;Working at Geo Petroleum has given me the chance to grow my skills and take pride in work that matters.&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-px h-6 bg-primary" />
