@@ -264,7 +264,7 @@ const Footer: React.FC = () => {
           <div className="w-5 h-5 border-t-2 border-r-2 border-white" />
         </div>
 
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 py-5 flex flex-col-reverse sm:flex-row items-center justify-between gap-3">
           <span
             className="text-[11px] text-[#555] tracking-wide"
             style={{ fontFamily: "var(--font-body), sans-serif" }}
@@ -280,6 +280,18 @@ const Footer: React.FC = () => {
               Houston · Texas · Southeast
             </span>
           </div>
+          <p className="ft-mono text-xs tracking-wide">
+            Powered by{" "}
+            <a
+              href="https://orangelabs-neon.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition-opacity hover:opacity-80"
+            >
+              <span style={{ color: "#FF6A00" }}>Orange</span>
+              <span className="text-white/40">Labs Dev.</span>
+            </a>
+          </p>
         </div>
       </div>
     </footer>
