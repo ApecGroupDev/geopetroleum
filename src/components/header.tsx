@@ -3,37 +3,15 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { NAV_LINKS as _NAV_LINKS, SERVICE_LINKS } from "@/components/constants";
 
-const NAV_LINKS = [
-  { label: "HOME", path: "/" },
-  { label: "SERVICES", path: "/services" },
-  { label: "CAREERS", path: "/careers" },
-  { label: "BLOG", path: "/blogs" },
-  { label: "CONTACT", path: "/contact" },
-];
-
-const SERVICE_LINKS = [
-  {
-    label: "Environmental Risk Assessment",
-    path: "/services/environmental-risk-assessment",
-  },
-  {
-    label: "Environmental Compliance Solutions",
-    path: "/services/environmental-compliance-solutions",
-  },
-  {
-    label: "Canopy Imaging Solutions",
-    path: "/services/canopy-imaging-solutions",
-  },
-  {
-    label: "Fuel Tanks Manufacturing",
-    path: "https://www.metalproductsusa.com/",
-  },
-];
+const NAV_LINKS = _NAV_LINKS.map(({ label, path }) => ({
+  label: label.toUpperCase(),
+  path,
+}));
 
 const Header: React.FC = () => {
   const pathname = usePathname();
@@ -213,7 +191,7 @@ const Header: React.FC = () => {
                        hover:bg-[#008f45] transition-colors duration-200"
             style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
           >
-            <FaPhoneAlt className="text-sm shrink-0" />
+            <Phone className="w-3.5 h-3.5 shrink-0" />
             <span className="hidden xs:inline">FREE CONSULTATION</span>
             <span className="xs:hidden">FREE</span>
           </a>
@@ -225,9 +203,9 @@ const Header: React.FC = () => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              <FaTimes className="text-base" />
+              <X className="w-4 h-4" />
             ) : (
-              <FaBars className="text-base" />
+              <Menu className="w-4 h-4" />
             )}
           </button>
         </div>
@@ -347,7 +325,7 @@ const Header: React.FC = () => {
                                text-[13px] font-bold tracking-widest uppercase hover:bg-[#008f45] transition-colors duration-200"
                     style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
                   >
-                    <FaPhoneAlt />
+                    <Phone className="w-3.5 h-3.5" />
                     FREE CONSULTATION
                   </a>
                 </div>
