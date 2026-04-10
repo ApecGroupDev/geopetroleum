@@ -4,41 +4,8 @@ import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import Image from "next/image";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-
-const QUICK_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Careers", href: "/careers" },
-  { label: "Blog", href: "/blogs" },
-  { label: "Contact", href: "/contact" },
-];
-
-const SERVICE_LINKS = [
-  {
-    label: "Environmental Risk Assessment",
-    href: "/services/environmental-risk-assessment",
-  },
-  {
-    label: "Environmental Compliance Solutions",
-    href: "/services/environmental-compliance-solutions",
-  },
-  {
-    label: "Canopy Imaging Solutions",
-    href: "/services/canopy-imaging-solutions",
-  },
-  {
-    label: "Fuel Tanks Manufacturing",
-    href: "https://www.metalproductsusa.com/",
-  },
-];
-
-const SOCIALS = [
-  "https://www.facebook.com/",
-  "https://www.linkedin.com/",
-  "https://www.instagram.com/",
-  "https://twitter.com/",
-];
+import { Phone, Mail, MapPin } from "lucide-react";
+import { NAV_LINKS, SERVICE_LINKS, SOCIALS } from "@/components/constants";
 
 const SectionLabel = ({ text }: { text: string }) => (
   <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
@@ -153,10 +120,10 @@ const Footer: React.FC = () => {
             >
               <SectionLabel text="Quick Links" />
               <ul className="flex flex-col items-center lg:items-start gap-2.5">
-                {QUICK_LINKS.map(({ label, href }) => (
-                  <li key={href}>
+                {NAV_LINKS.map(({ label, path }) => (
+                  <li key={path}>
                     <Link
-                      href={href}
+                      href={path}
                       className="flex items-center gap-2 text-[13px] text-[#888] hover:text-primary transition-colors duration-200 group"
                       style={{ fontFamily: "var(--font-body), sans-serif" }}
                     >
@@ -178,10 +145,10 @@ const Footer: React.FC = () => {
             >
               <SectionLabel text="Services" />
               <ul className="flex flex-col items-center lg:items-start gap-2.5">
-                {SERVICE_LINKS.map(({ label, href }) => (
-                  <li key={href}>
+                {SERVICE_LINKS.map(({ label, path }) => (
+                  <li key={path}>
                     <Link
-                      href={href}
+                      href={path}
                       className="flex items-center gap-2 text-[13px] text-[#888] hover:text-primary transition-colors duration-200 group text-center lg:text-left"
                       style={{ fontFamily: "var(--font-body), sans-serif" }}
                     >
@@ -208,7 +175,7 @@ const Footer: React.FC = () => {
                   className="flex items-start gap-3 group"
                 >
                   <span className="mt-0.5 w-7 h-7 flex items-center justify-center bg-primary text-white shrink-0">
-                    <FaPhoneAlt className="text-[11px]" />
+                    <Phone className="w-3 h-3" />
                   </span>
                   <span
                     className="text-[13px] text-[#888] group-hover:text-primary transition-colors duration-200 mt-1"
@@ -223,7 +190,7 @@ const Footer: React.FC = () => {
                   className="flex items-start gap-3 group"
                 >
                   <span className="mt-0.5 w-7 h-7 flex items-center justify-center bg-primary text-white shrink-0">
-                    <FaEnvelope className="text-[11px]" />
+                    <Mail className="w-3 h-3" />
                   </span>
                   <span
                     className="text-[13px] text-[#888] group-hover:text-primary transition-colors duration-200 break-all mt-1"
@@ -235,7 +202,7 @@ const Footer: React.FC = () => {
 
                 <div className="flex items-start gap-3">
                   <span className="mt-0.5 w-7 h-7 flex items-center justify-center bg-[#2a2a2a] text-[#888] shrink-0">
-                    <FaMapMarkerAlt className="text-[11px]" />
+                    <MapPin className="w-3 h-3" />
                   </span>
                   <div
                     className="text-[13px] text-[#888] leading-relaxed mt-1"
