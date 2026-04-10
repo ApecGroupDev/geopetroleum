@@ -1,5 +1,4 @@
 import Header from "@/components/header";
-import HomePageLayout from "./layouts/homepageLayout";
 import type { Metadata } from "next";
 import Footer from "@/components/footer";
 import Hero_Home from "./home/hero_home";
@@ -24,21 +23,19 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <HomePageLayout>
-      <div className="flex flex-col">
-        <HomeSchema />
-        <Header />
-        <Hero_Home />
-        <Intro_Home />
-        <Expertise_Home />
-        <MissionAssocs_Home />
-        <Core_Home />
-        <CTASection />
-        <Testimonial_Home />
-        <Industries_Home />
-        <FAQ_Home />
-        <Footer />
-      </div>
-    </HomePageLayout>
+    <div className="flex flex-col">
+      <HomeSchema />
+      <Header />
+      <Hero_Home />
+      <Intro_Home />
+      <Expertise_Home />
+      <MissionAssocs_Home />
+      <Core_Home />
+      <CTASection />
+      <Testimonial_Home />
+      <Industries_Home />
+      <FAQ_Home />
+      <Footer />
+    </div>
   );
 }
