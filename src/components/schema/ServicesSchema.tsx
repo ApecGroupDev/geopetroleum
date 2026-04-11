@@ -8,110 +8,103 @@ export default function ServicesSchema() {
       {
         "@type": "LocalBusiness",
         "@id": "https://www.geopetroleum.com#localbusiness",
-        "name": "Geo Petroleum",
-        "url": "https://www.geopetroleum.com/services",
-        "telephone": "844-GEO-4040",
-        "email": "info@geopetroleum.com",
-        "logo": {
+        name: "Geo Petroleum",
+        url: "https://www.geopetroleum.com/services",
+        telephone: "844-GEO-4040",
+        email: "info@geopetroleum.com",
+        logo: {
           "@type": "ImageObject",
-          "url": "https://www.geopetroleum.com/logos/components/Geo-Petroleum.webp"
+          url: "https://www.geopetroleum.com/logos/components/Geo-Petroleum.webp",
         },
-        "description":
+        description:
           "Geo Petroleum provides complete environmental operations and petroleum services including consulting, compliance management, canopy imaging, and fuel tank manufacturing. Based in Houston, TX, serving Texas and the Southeast.",
-        "address": {
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "40 Lyerly Street",
-          "addressLocality": "Houston",
-          "addressRegion": "TX",
-          "postalCode": "77022",
-          "addressCountry": "US"
+          streetAddress: "40 Lyerly Street",
+          addressLocality: "Houston",
+          addressRegion: "TX",
+          postalCode: "77022",
+          addressCountry: "US",
         },
-        "areaServed": [
-          { "@type": "Place", "name": "Houston" },
-          { "@type": "Place", "name": "Texas" },
-          { "@type": "Place", "name": "Southeast USA" }
+        areaServed: [
+          { "@type": "Place", name: "Houston" },
+          { "@type": "Place", name: "Texas" },
+          { "@type": "Place", name: "Southeast USA" },
         ],
-        "openingHoursSpecification": [
+        openingHoursSpecification: [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "08:00",
-            "closes": "17:00"
-          }
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            opens: "08:00",
+            closes: "17:00",
+          },
         ],
-        "memberOf": [
+        memberOf: [
           {
             "@type": "Organization",
-            "name": "Petroleum Equipment Institute (PEI)",
-            "sameAs": "https://pei.org/"
+            name: "Petroleum Equipment Institute (PEI)",
+            sameAs: "https://pei.org/",
           },
           {
             "@type": "Organization",
-            "name": "Texas Food & Fuel Association",
-            "sameAs": "https://www.tffa.com/"
+            name: "Texas Food & Fuel Association",
+            sameAs: "https://www.tffa.com/",
           },
           {
             "@type": "Organization",
-            "name":
-              "Greater Houston Retailers Cooperative Association (GHRA)",
-            "sameAs": "https://www.ghraonline.com/"
-          }
+            name: "Greater Houston Retailers Cooperative Association (GHRA)",
+            sameAs: "https://www.ghraonline.com/",
+          },
         ],
-        "serviceType": "Environmental Operations and Petroleum Services",
-        "hasOfferCatalog": {
+        serviceType: "Environmental Operations and Petroleum Services",
+        hasOfferCatalog: {
           "@type": "OfferCatalog",
-          "name": "Geo Petroleum Services",
-          "itemListElement": [
+          name: "Geo Petroleum Services",
+          itemListElement: [
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Environmental Risk Assessment",
-                "description":
-                  "Site evaluation, testing, and risk mitigation to prevent environmental hazards and maintain compliance."
-              }
+                name: "Environmental Risk Assessment",
+                description:
+                  "Site evaluation, testing, and risk mitigation to prevent environmental hazards and maintain compliance.",
+              },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Environmental Compliance Solutions",
-                "description":
-                  "Permitting, testing, and documentation to meet EPA, TCEQ, and state-level petroleum regulations."
-              }
+                name: "Environmental Compliance Solutions",
+                description:
+                  "Permitting, testing, and documentation to meet EPA, TCEQ, and state-level petroleum regulations.",
+              },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Canopy Imaging Solutions",
-                "description":
-                  "Design, fabrication, and installation of branded canopies and lighting systems for fuel stations."
-              }
+                name: "Canopy Imaging Solutions",
+                description:
+                  "Design, fabrication, and installation of branded canopies and lighting systems for fuel stations.",
+              },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Fuel Tanks Manufacturing",
-                "description":
-                  "Custom manufacturing and installation of aboveground and underground fuel tanks built to EPA and UL standards."
-              }
-            }
-          ]
+                name: "Fuel Tanks Manufacturing",
+                description:
+                  "Custom manufacturing and installation of aboveground and underground fuel tanks built to EPA and UL standards.",
+              },
+            },
+          ],
         },
-        "mainEntityOfPage": {
+        mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": "https://www.geopetroleum.com/services"
-        }
-      }
-    ]
+          "@id": "https://www.geopetroleum.com/services",
+        },
+      },
+    ],
   };
 
   return <SchemaMarkup id="services-schema" data={schema} />;
