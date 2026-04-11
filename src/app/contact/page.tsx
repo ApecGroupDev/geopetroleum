@@ -7,7 +7,7 @@ import Overview_Contact from "./sections/overview_contact";
 import OfficeProcess_Contact from "./sections/officeProcess_contact";
 import Choose_Contact from "./sections/choose_contact";
 import CTASection from "@/components/cta";
-import HomeSchema from "@/components/schema/HomeSchema";
+import ContactPageSchema from "@/components/schema/ContactSchema";
 
 export const metadata: Metadata = {
   title: "Contact Petroleum Services Company | Geo Petroleum",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const Contact: React.FC = () => {
   return (
     <div className='flex flex-col'>
-      <HomeSchema />
+      <ContactPageSchema />
       <Header />
       <Hero_Contact />
       <Intro_Contact />
