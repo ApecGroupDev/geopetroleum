@@ -5,25 +5,25 @@ export default function ContactPageSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://geopetroleum.com/contact#contactpage",
+    "@id": "https://www.geopetroleum.com/contact#contactpage",
     "mainEntity": {
       "@type": "Organization",
-      "@id": "https://geopetroleum.com#organization",
+      "@id": "https://www.geopetroleum.com#organization",
       "name": "Geo Petroleum",
-      "url": "https://geopetroleum.com",
+      "url": "https://www.geopetroleum.com",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "(000) 000-0000",
+        "telephone": "844-GEO-4040",
         "contactType": "Customer Service",
         "areaServed": ["US-TX", "Southeast USA"],
         "availableLanguage": "English"
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "505 Garden Oaks Blvd",
+        "streetAddress": "40 Lyerly Street",
         "addressLocality": "Houston",
         "addressRegion": "TX",
-        "postalCode": "77018",
+        "postalCode": "77022",
         "addressCountry": "US"
       },
       "description":
@@ -31,7 +31,7 @@ export default function ContactPageSchema() {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://geopetroleum.com/contact"
+      "@id": "https://www.geopetroleum.com/contact"
     }
   };
 
