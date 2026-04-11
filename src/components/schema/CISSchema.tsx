@@ -8,16 +8,16 @@ export default function CISSchema() {
       {
         "@type": "LocalBusiness",
         "name": "Geo Petroleum",
-        "url": "https://geopetroleum.com/fuel-station-canopy",
-        "telephone": "(000) 000-0000",
+        "url": "https://www.geopetroleum.com/services/canopy-imaging-solutions",
+        "telephone": "844-GEO-4040",
         "description":
           "Fuel station canopy solutions including custom design, fabrication, branding, LED lighting, and installation. Serving Houston, TX, and the Southeast region.",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "505 Garden Oaks Blvd",
+          "streetAddress": "40 Lyerly Street",
           "addressLocality": "Houston",
           "addressRegion": "TX",
-          "postalCode": "77018",
+          "postalCode": "77022",
           "addressCountry": "US"
         },
         "areaServed": [
