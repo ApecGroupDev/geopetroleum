@@ -7,24 +7,23 @@ export default function ServicesSchema() {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://geopetroleum.com#localbusiness",
+        "@id": "https://www.geopetroleum.com#localbusiness",
         "name": "Geo Petroleum",
-        "url": "https://geopetroleum.com/services",
-        "telephone": "000-000-0000",
+        "url": "https://www.geopetroleum.com/services",
+        "telephone": "844-GEO-4040",
         "email": "info@geopetroleum.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://geopetroleum.com/logo.png"
+          "url": "https://www.geopetroleum.com/logos/components/Geo-Petroleum.webp"
         },
-        "image": "https://geopetroleum.com/images/services-banner.jpg",
         "description":
           "Geo Petroleum provides complete environmental operations and petroleum services including consulting, compliance management, canopy imaging, and fuel tank manufacturing. Based in Houston, TX, serving Texas and the Southeast.",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "505 Garden Oaks Blvd",
+          "streetAddress": "40 Lyerly Street",
           "addressLocality": "Houston",
           "addressRegion": "TX",
-          "postalCode": "77018",
+          "postalCode": "77022",
           "addressCountry": "US"
         },
         "areaServed": [
@@ -109,7 +108,7 @@ export default function ServicesSchema() {
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://geopetroleum.com/services"
+          "@id": "https://www.geopetroleum.com/services"
         }
       }
     ]
