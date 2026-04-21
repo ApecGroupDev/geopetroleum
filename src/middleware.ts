@@ -1,17 +1,17 @@
 // src/middleware.ts
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 const goneUrls = [
-  '/missing-page',
-  '/sample-page',
-  '/home',
-  '/hello-world',
-  '/category/uncategorized',
-  '/feed',
-  '/environmental-risk-assessment',
-  '/blog',
-]
+  "/missing-page",
+  "/sample-page",
+  "/home",
+  "/hello-world",
+  "/category/uncategorized",
+  "/feed",
+  "/environmental-risk-assessment",
+  "/blog",
+];
 
 const goneHtml = `<!DOCTYPE html>
 <html lang="en">
@@ -102,18 +102,27 @@ const goneHtml = `<!DOCTYPE html>
   </main>
   <footer>&copy; ${new Date().getFullYear()} Geo Petroleum. All rights reserved.</footer>
 </body>
-</html>`
+</html>`;
 
 export function middleware(request: NextRequest) {
   if (goneUrls.includes(request.nextUrl.pathname)) {
     return new NextResponse(goneHtml, {
       status: 410,
-      headers: { 'Content-Type': 'text/html' },
-    })
+      headers: { "Content-Type": "text/html" },
+    });
   }
-  return NextResponse.next()
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: goneUrls,
-}
+  matcher: [
+    "/missing-page",
+    "/sample-page",
+    "/home",
+    "/hello-world",
+    "/category/uncategorized",
+    "/feed",
+    "/environmental-risk-assessment",
+    "/blog",
+  ],
+};
