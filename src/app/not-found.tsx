@@ -2,11 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#e3e3e3] items-center justify-center text-center px-6">
-      {/* Content */}
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex flex-1 flex-col items-center justify-center text-center px-6 py-20 bg-gradient-to-b from-white via-[#f5f7f6] to-[#e6efe9]">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -14,17 +17,17 @@ export default function NotFound() {
         className="max-w-3xl"
       >
         {/* 404 Number */}
-        <h1 className="text-[#1DA978] text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[16rem] font-extrabold leading-none drop-shadow-[0_4px_6px_rgba(0,0,0,0.25)]">
+        <h1 className="font-[family-name:var(--font-montserrat)] text-[var(--color-primary)] text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[15rem] font-extrabold leading-none tracking-tight drop-shadow-[0_6px_10px_rgba(0,166,81,0.25)]">
           404
         </h1>
 
         {/* Title */}
-        <span className="text-gray-400 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2">
+        <h2 className="font-[family-name:var(--font-montserrat)] text-[var(--color-secondary)] font-bold text-3xl sm:text-4xl md:text-5xl mt-2">
           Page Not Found
-        </span>
+        </h2>
 
         {/* Subtitle */}
-        <p className="text-gray-700 text-lg sm:text-xl md:text-2xl mt-4">
+        <p className="text-[var(--color-muted)] text-base sm:text-lg md:text-xl mt-4 max-w-xl mx-auto">
           The page you’re looking for doesn’t exist or has been moved.
         </p>
 
@@ -36,17 +39,14 @@ export default function NotFound() {
         >
           <Link
             href="/"
-            className="px-6 py-3 rounded-full text-lg md:text-xl font-medium outline-2 outline-[#1DA978] text-gray-800 hover:bg-[#1DA978] hover:text-white transition-all duration-300"
+            className="inline-block px-7 py-3 rounded-full text-base md:text-lg font-semibold tracking-wide bg-[var(--color-primary)] text-white shadow-md shadow-[rgba(0,166,81,0.25)] hover:bg-[#008a43] hover:shadow-lg transition-all duration-300"
           >
             RETURN TO HOMEPAGE
           </Link>
         </motion.div>
       </motion.div>
-
-      {/* Footer-like spacing to keep vertical balance */}
-      <div className="mt-20 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Geo Petroleum. All rights reserved.
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
